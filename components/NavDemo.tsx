@@ -54,7 +54,9 @@ export function NavDemo() {
     <div className="text-white flex items-center justify-between w-full fixed top-0 left-0 right-0 px-4 h-20 bg-transparent backdrop-blur-sm z-20">
       <div className="max-w-7xl mx-auto w-full flex items-center justify-between">
         <Link href="/" className="text-white">
-          <h2 className="text-primary font-bold text-pretty text-3xl">InsideTech</h2>
+          <Image src="/Logo.png" alt="InsideTech" width={200} height={200}>
+
+          </Image>
         </Link>
 
         <div className="hidden lg:flex items-center space-x-8">

@@ -47,7 +47,9 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-white via-accent to-white" id="servicios">
+    <section className="py-20 bg-gradient-to-b from-white via-accent to-white relative" id="servicios">
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-500/20 blur-[150px] rounded-full animate-blob" />
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">

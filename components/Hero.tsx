@@ -51,8 +51,8 @@ import { ReactTyped } from "react-typed";
 
 export const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-accent via-white to-white px-4" id="inicio">
-      <div className="max-w-7xl mx-auto text-center">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-accent via-white to-white px-4 relative" id="inicio">
+      <div className="max-w-7xl mx-auto text-center h-screen flex flex-col justify-center items-center"> 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -89,13 +89,13 @@ export const Hero = () => {
               className="border-2 hover:bg-secondary/5"
               asChild
             >
-              <Link href="/contacto">Contáctanos para tu proyecto</Link>
+              <Link href="#contacto">Contáctanos para tu proyecto</Link>
             </Button>
           </div>
         </motion.div>
       </div>
       
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/50 blur-[150px] rounded-full animate-blob" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500/30 blur-[150px] rounded-full animate-blob" />
     </div>
   );
 };

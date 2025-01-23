@@ -38,8 +38,8 @@ export default function Assets() {
   return (
     <div className="min-h-screen bg-white">
     
-    <section className="pt-32 pb-20 bg-gradient-to-b from-accent via-white to-white relative overflow-hidden z-0">
-          <motion.div
+    <section className="pt-20  bg-gradient-to-b from-accent via-white to-white relative overflow-hidden z-0 h-screen flex items-center justify-center">
+    <motion.div
             className="absolute w-[500px] h-[500px] -top-20 -left-20 rounded-full"
             style={{
               background: "radial-gradient(circle at center, rgba(52, 211, 153, 0.15) 0%, transparent 70%)",
@@ -63,7 +63,7 @@ export default function Assets() {
               transition={{ duration: 0.5 }}
               className="text-center mb-16"
             >
-              <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+              <span className="inline-block px-4 py-5 bg-primary/10 text-primary rounded-full text-sm font-medium pb-10">
               InvGate Assets
               </span>
               <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6">
