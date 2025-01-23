@@ -176,7 +176,7 @@ export default function Assets() {
             en implementaciones de gran escala. Te guiamos desde la planificación inicial hasta 
             la integración completa con tus procesos de TI.
           </p>
-          <Button size="lg" className="bg-mint hover:bg-mint-dark text-white">
+          <Button size="lg" className="bg-black hover:bg-mint-dark text-white">
             Contáctanos
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>

@@ -12,13 +12,13 @@ export default function Home() {
     <div className="min-h-screen   relative overflow-hidden ">
       {/* Blur effect */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-500/40 blur-[150px] rounded-full animate-blob -z-0" />
-        <NavDemo />
+       
         <Hero />
         <InfiniteGallery />
         <Services />
         <About />
         <Contact />
-        <Footer />
+        
       
     </div>
   );
