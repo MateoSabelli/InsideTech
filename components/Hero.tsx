@@ -51,7 +51,7 @@ import { ReactTyped } from "react-typed";
 
 export const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-accent via-white to-white px-4 relative" id="inicio">
+    <div className="min-h-screen flex items-center justify-center  px-4 relative" id="inicio">
       <div className="max-w-7xl mx-auto text-center h-screen flex flex-col justify-center items-center"> 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,14 +62,14 @@ export const Hero = () => {
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             Infraestructura y DevOps
           </span>  
-          <h1 className="text-4xl md:text-6xl font-bold text-secondary leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-secondary dark:text-white leading-tight">
             Impulsando tu transformación con soluciones de {" "}
-            <ReactTyped
+            {/* <ReactTyped
             strings={["infraestructura y DevOps"]}
             typeSpeed={200}
             className="text-primary"
-          />
-            {/* <span className="text-primary"> infraestructura y DevOps</span> */}
+          /> */}
+            <span className="text-primary"> infraestructura y DevOps</span>
           </h1>
           <p className="text-muted max-w-2xl mx-auto text-lg md:text-xl">
             Acompañamos a empresas en el diseño, la implementación y el soporte de entornos de TI escalables. 
@@ -86,7 +86,7 @@ export const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-2 hover:bg-secondary/5"
+              className="border-2 hover:bg-secondary/5 dark:text-white"
               asChild
             >
               <Link href="#contacto">Contáctanos para tu proyecto</Link>

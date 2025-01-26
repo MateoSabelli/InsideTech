@@ -47,7 +47,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-white via-accent to-white relative" id="servicios">
+    <section className="py-20 relative" id="servicios">
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-500/20 blur-[150px] rounded-full animate-blob" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,7 +55,7 @@ export const Services = () => {
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             Nuestros Servicios
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-black">
+          <h2 className="text-3xl md:text-4xl font-bold  dark:text-white">
             Soluciones que se adaptan a tu negocio
           </h2>
         </div>
@@ -68,12 +68,12 @@ export const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="p-6 rounded-2xl bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300"
+              className="p-6 rounded-2xl bg-white/80 dark:bg-black/30 backdrop-blur-sm hover:shadow-lg transition-all duration-300"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <service.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-secondary mb-2">
+              <h3 className="text-xl font-semibold text-black dark:text-primary mb-2">
                 {service.title}
               </h3>
               <p className="text-muted mb-4">{service.description}</p>

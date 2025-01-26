@@ -36,13 +36,13 @@ const values = [
 
 export const About = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-white via-accent to-white relative" id="nosotros">
+    <section className="py-20  relative" id="nosotros">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             Quiénes Somos
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-6">
             Un equipo especializado en infraestructura, DevOps y soporte IT
           </h2>
           <p className="text-muted max-w-3xl mx-auto text-lg">
@@ -65,7 +65,7 @@ export const About = () => {
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
                 <value.icon className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-secondary mb-3">
+              <h3 className="text-xl font-semibold text-secondary dark:text-white mb-3">
                 {value.title}
               </h3>
               <p className="text-muted">{value.description}</p>

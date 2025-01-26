@@ -38,7 +38,7 @@ export default function Assets() {
   return (
     <div className="min-h-screen bg-white">
     
-    <section className="pt-20  bg-gradient-to-b from-accent via-white to-white relative overflow-hidden z-0 h-screen flex items-center justify-center">
+    <section className="pt-20  relative overflow-hidden z-0 h-screen flex items-center justify-center">
           <motion.div
             className="absolute w-[500px] h-[500px] -top-20 -left-20 rounded-full"
             style={{
@@ -67,7 +67,7 @@ export default function Assets() {
               InvGate Service Desk
               </span>
               <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6">
-              Eleva tu soporte de TI al siguiente nivel
+              ¿Qué es InvGate Service Desk?
               </h1>
               <p className="text-muted max-w-3xl mx-auto text-lg">
               Gestiona incidencias, solicitudes y problemas de forma ágil, con flujos de trabajo automatizados y una interfaz intuitiva.

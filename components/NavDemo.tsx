@@ -17,6 +17,7 @@ import {
 import { Button } from "./ui/button"
 import { Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { ModeToggle } from "./ModeToggle"
 
 const components: { title: string; href: string; description: string; logo: string }[] = [
   {
@@ -63,11 +64,11 @@ export function NavDemo() {
           <NavigationMenu>
             <NavigationMenuList className="space-x-4">
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent text-black shadow-none hover:bg-white/10">
+                <NavigationMenuTrigger className="bg-transparent  black shadow-none hover:bg-white/10">
                   Servicios
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] bg-white/90 backdrop-blur-sm rounded-md">
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]  backdrop-blur-sm rounded-md">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
                         <a
@@ -126,6 +127,7 @@ export function NavDemo() {
           </NavigationMenu>
 
           <Button className="bg-primary text-white hover:bg-[#00E5E5]/90 px-6">Cotizar servicio</Button>
+          <ModeToggle />
         </div>
 
         <div className="lg:hidden">
@@ -147,6 +149,7 @@ export function NavDemo() {
                   Documentation
                 </Link>
                 <Button className="bg-[#00E5E5] text-white hover:bg-[#00E5E5]/90 w-full">Cotizar servicio</Button>
+                <ModeToggle />
               </nav>
             </SheetContent>
           </Sheet>
