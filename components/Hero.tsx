@@ -46,8 +46,8 @@ export default function Hero() {
 "use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ReactTyped } from "react-typed";
+import Link from "next/link";/* 
+import { ReactTyped } from "react-typed"; */
 
 export const Hero = () => {
   return (
@@ -95,7 +95,7 @@ export const Hero = () => {
         </motion.div>
       </div>
       
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500/30 blur-[150px] rounded-full animate-blob" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500/40 blur-[150px] rounded-full animate-blob" />
     </div>
   );
 };

@@ -1,13 +1,5 @@
 "use client";
 import Image from 'next/image'
-import { motion } from "framer-motion";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 const clients = [
   { id: 1, name: 'Client 1', logo: '/Centralpuerto.svg' },
   { id: 2, name: 'Client 2', logo: '/BBVA.svg' },
