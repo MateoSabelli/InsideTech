@@ -60,15 +60,15 @@ export function NavDemo() {
           </Image>
         </Link>
 
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-8 dark:text-white">
           <NavigationMenu>
             <NavigationMenuList className="space-x-4">
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent  black shadow-none hover:bg-white/10">
+                <NavigationMenuTrigger className="bg-transparent font-medium dark:text-white black shadow-none hover:bg-white/10">
                   Servicios
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]  backdrop-blur-sm rounded-md">
+                  <ul className="grid dark:text-white gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]  backdrop-blur-sm rounded-md">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
                         <a
@@ -76,14 +76,14 @@ export function NavDemo() {
                           href="/"
                         >
                           <Icons.logo className="h-6 w-6" />
-                          <div className="mb-2 mt-4 text-lg font-medium text-black">shadcn/ui</div>
-                          <p className="text-sm leading-tight text-gray-600">
+                          <div className="mb-2 mt-4 text-lg font-medium text-black dark:text-white">shadcn/ui</div>
+                          <p className="text-sm leading-tight text-gray-600 dark:text-white">
                             Beautifully designed components built with Radix UI and Tailwind CSS.
                           </p>
                         </a>
                       </NavigationMenuLink>
                     </li>
-                    <ListItem href="/docs" title="Introduction">
+                    <ListItem href="/docs" title="Introduction" className="dark:text-white">
                       Re-usable components built using Radix UI and Tailwind CSS.
                     </ListItem>
                     <ListItem href="/docs/installation" title="Installation">
@@ -96,7 +96,7 @@ export function NavDemo() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent text-black hover:bg-white/10  data-[state=open]:bg-white/10">
+                <NavigationMenuTrigger className="bg-transparent text-black hover:bg-white/10  data-[state=open]:bg-white/10 dark:text-white">
                   Productos
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -117,16 +117,18 @@ export function NavDemo() {
               <NavigationMenuItem>
                 <Link href="/docs" legacyBehavior passHref>
                   <NavigationMenuLink
-                    className={cn(navigationMenuTriggerStyle(), "bg-transparent text-black hover:bg-white/10 ")}
+                    className={cn(navigationMenuTriggerStyle(), "bg-transparent text-black hover:bg-white/10 dark:text-white")}
                   >
-                    Documentation
+                    Blog
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
-          <Button className="bg-primary text-white hover:bg-[#00E5E5]/90 px-6">Cotizar servicio</Button>
+          <Link href="#contacto" passHref>
+            <Button className="bg-primary text-white hover:bg-[#00E5E5]/90 px-6">Cotizar servicio</Button>
+          </Link>
           <ModeToggle />
         </div>
 

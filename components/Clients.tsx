@@ -6,13 +6,13 @@ const clients = [
   { id: 3, name: 'Client 3', logo: '/Aluar.svg' },
   { id: 4, name: 'Client 4', logo: '/Ledesma.png' },
   { id: 5, name: 'Client 5', logo: '/Bunge.svg' },
-  { id: 5, name: 'Client 5', logo: '/GrupoProvincia.png' },
-  { id: 5, name: 'Client 5', logo: '/Galeno.png' },
-  { id: 5, name: 'Client 5', logo: '/Aconcagua.png' },
-  { id: 5, name: 'Client 5', logo: '/Sanatorio.png' },
-  { id: 5, name: 'Client 5', logo: '/Arcos.png' },
-  { id: 5, name: 'Client 5', logo: '/Bancor.png' },
-  { id: 5, name: 'Client 5', logo: '/Diagnostico.png' },
+  { id: 6, name: 'Client 5', logo: '/GrupoProvincia.png' },
+  { id: 7, name: 'Client 5', logo: '/Galeno.png' },
+  { id: 8, name: 'Client 5', logo: '/Aconcagua.png' },
+  { id: 9, name: 'Client 5', logo: '/Sanatorio.png' },
+  { id: 10, name: 'Client 5', logo: '/Arcos.png' },
+  { id: 11, name: 'Client 5', logo: '/Bancor.png' },
+  { id: 12, name: 'Client 5', logo: '/Diagnostico.png' },
 ]
 
 export function InfiniteGallery() {
@@ -31,21 +31,21 @@ export function InfiniteGallery() {
             Descubre por qué las empresas líderes eligen a InsideTech como su socio tecnológico de confianza.
           </p>
         </div>
+      </div>
         <div className="w-full overflow-hidden  pt-10">
-      <div className="flex animate-scroll items-center ">
-        {[...clients, ...clients, ...clients].map((client, index) => (
-          <div key={`${client.id}-${index}`} className="flex-shrink-0  mx-16">
-            <Image
-              src={client.logo}
-              alt={client.name}
-              width={160}
-              height={100}
-            />
+          <div className="flex animate-scroll items-center ">
+            {[...clients, ...clients, ...clients].map((client, index) => (
+              <div key={`${client.id}-${index}`} className="flex-shrink-0 mx-10">
+                <Image
+                  src={client.logo}
+                  alt={client.name}
+                  width={160}
+                  height={100}
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
-      </div>
+        </div>
     </section>
 
     
