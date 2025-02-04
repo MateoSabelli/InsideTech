@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";/* 
 import { ReactTyped } from "react-typed"; */
 import { FloatingIcons } from "./FloatingIcons";
-import { InfiniteGallery } from "./Clients";
 import BackgroundVideo from "./BackgroundVideo";
 
 export const Hero = () => {
