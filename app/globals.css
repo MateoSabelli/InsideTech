@@ -87,10 +87,10 @@ body {
 
 .blur-container {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
   overflow: hidden;
   z-index: -1;
 }
@@ -100,13 +100,9 @@ body {
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(
-    circle,
-    rgba(173, 230, 216, 0.5) 20%,
-    transparent 90%
-  );
+  width: 150%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(135,23,171,0.7987570028011204) 0%, rgba(18,101,171,0.8155637254901961) 33%, rgba(0,112,255,0.5942752100840336) 100%);
   animation: moveSpots 10s infinite linear;
   filter: blur(20px);
 }
@@ -138,4 +134,64 @@ body {
 
 .animate-scroll {
   animation: scroll 25s linear infinite;
+}
+
+.dot-pattern {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.363) 1.5px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.animate-fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  background-color: black;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  z-index: -10;
+}
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(to bottom, rgba(2, 2, 2, 0) 0%, rgb(10, 10, 10) 100%);
 }

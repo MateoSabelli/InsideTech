@@ -56,11 +56,9 @@ export function NavDemo() {
       <div className="max-w-7xl mx-auto w-full flex items-center justify-between">
         <Link href="/" className="text-white">
           <Image src="/Logo.png" alt="InsideTech" width={200} height={200}>
-
           </Image>
         </Link>
-
-        <div className="hidden lg:flex items-center space-x-8 dark:text-white">
+        <div className="hidden lg:flex items-center space-x-8 dark:text-white z-10">
           <NavigationMenu>
             <NavigationMenuList className="space-x-4">
               <NavigationMenuItem>
@@ -144,9 +142,25 @@ export function NavDemo() {
                 <Link href="/" className="text-lg font-semibold">
                   Getting started
                 </Link>
-                <Link href="/" className="text-lg font-semibold">
-                  Servicios
-                </Link>
+                <NavigationMenuItem>
+                <NavigationMenuTrigger className="bg-transparent text-black hover:bg-white/10  data-[state=open]:bg-white/10 dark:text-white">
+                  Productos
+                </NavigationMenuTrigger>
+                <NavigationMenuTrigger>
+                  <ul className="grid grid-cols-1 w-full gap-3 p-6  lg:w-[600px] bg-white/90 backdrop-blur-sm rounded-md">
+                    {components.map((component) => (
+                      <ListItem
+                        key={component.title}
+                        title={component.title}
+                        href={component.href}
+                        logo={component.logo}
+                      >
+                        {component.description}
+                      </ListItem>
+                    ))}
+                  </ul>
+                </NavigationMenuTrigger>
+              </NavigationMenuItem>
                 <Link href="/docs" className="text-lg font-semibold">
                   Documentation
                 </Link>
@@ -189,6 +203,7 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
               <div>
                 <div className="text-sm font-medium leading-none text-black">{title}</div>
                 <p className="line-clamp-2 text-sm leading-snug text-gray-600">{children}</p>
+                
               </div>
             </div>
           </a>

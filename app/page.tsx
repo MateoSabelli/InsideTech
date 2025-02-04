@@ -2,6 +2,8 @@ import { About } from "@/components/About";
 import { InfiniteGallery } from "@/components/Clients";
 import { Contact } from "@/components/Contact";
 import { Hero } from "@/components/Hero";
+import { Products } from "@/components/Integrales";
+import Productos from "@/components/productos";
 import { Services } from "@/components/Services";
 
 export default function Home() {
@@ -12,6 +14,7 @@ export default function Home() {
         <Hero />
         <InfiniteGallery />
         <Services />
+        <Productos />
         <About />
         <Contact />
         

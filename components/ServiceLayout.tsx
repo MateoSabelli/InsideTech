@@ -20,9 +20,9 @@ export const ServiceLayout = ({
   children,
 }: ServiceLayoutProps) => {
   return (
-    <div className="min-h-screen bg-white pt-20">
+    <div className="min-h-screen  pt-20">
       <main>
-        <section className="pt-32 pb-20 bg-gradient-to-b from-accent via-white to-white">
+        <section className="pt-32 pb-20 bg-gradient-to-b">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -33,10 +33,10 @@ export const ServiceLayout = ({
               <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
                 {subtitle}
               </span>
-              <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6">
+              <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6 dark:text-white">
                 {title}
               </h1>
-              <p className="text-muted max-w-3xl mx-auto text-lg">
+              <p className="text-muted max-w-3xl mx-auto text-lg dark:text-white">
                 {description}
               </p>
             </motion.div>

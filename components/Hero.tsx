@@ -4,13 +4,17 @@ import { motion } from "framer-motion";
 import Link from "next/link";/* 
 import { ReactTyped } from "react-typed"; */
 import { FloatingIcons } from "./FloatingIcons";
+import { InfiniteGallery } from "./Clients";
+import BackgroundVideo from "./BackgroundVideo";
 
 export const Hero = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-dark via-dark-lighter to-dark px-4 relative overflow-hidden" id="inicio">
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-500/40 blur-[150px] rounded-full animate-blob -z-0 hidden md:block" />
-      <div className="absolute bottom-30 right-0 w-[500px] h-[500px] bg-cyan-500/40 blur-[150px] rounded-full animate-blob -z-0 hidden md:block" />
-      <div className=" absolute bottom-50 right-50 w-[300px] h-[300px] bg-cyan-500/40 blur-[150px] rounded-full animate-blob -z-0 md:hidden block" />
+       <BackgroundVideo /> 
+      <div className="absolute top-0 left-0 w-[200px] h-[200px]  blur-[150px] rounded-full blur-container -z-0 block animate-blob" />
+      <div className="absolute bottom-0 right-0 w-[200px] h-[200px] blur-[150px] rounded-full blur-container -z-0 block animate-blob" />
+      {/* <div className="dot-pattern dark:hidden " aria-hidden="true" /> */}
+      <FloatingIcons />
       <motion.div
         className="absolute inset-0 pointer-events-none"
         initial={{ opacity: 0 }}
@@ -18,7 +22,6 @@ export const Hero = () => {
         transition={{ duration: 0.5 }}
       >
       </motion.div>
-      <FloatingIcons />
       <div className="max-w-7xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,17 +42,18 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-4xl md:text-6xl font-bold text-dark-foreground leading-tight"
+            className="text-4xl md:text-6xl font-bold text-black dark:text-white leading-tight"
           >
             Impulsando tu transformación con soluciones de
             <span className="text-primary"> infraestructura y DevOps</span>
+            
           </motion.h1>
           
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="text-dark-foreground/80 max-w-2xl mx-auto text-lg md:text-xl"
+            className="text-gray-400 max-w-3xl mx-auto text-lg md:text-xl"
           >
             Acompañamos a empresas en el diseño, la implementación y el soporte de entornos de TI escalables. 
             Optimiza tu infraestructura con nuestros servicios de consultoría, DevOps y monitoreo.
@@ -71,13 +75,14 @@ export const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-dark-foreground/20 hover:bg-dark-foreground/5 text-dark-foreground backdrop-blur-sm"
+              className=" hover:bg-dark-foreground/5 hover:text-white text-dark-foreground backdrop-blur-sm"
               asChild
             >
               <Link href="/contacto">Contáctanos para tu proyecto</Link>
             </Button>
           </motion.div>
 
+        
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -87,6 +92,7 @@ export const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
+      <div className="video-overlay"></div>
     </div>
   );
 };

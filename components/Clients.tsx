@@ -17,9 +17,9 @@ const clients = [
 
 export function InfiniteGallery() {
   return (
-    <section className="pb-32  " id="clientes">
+    <section className="py-12 flex flex-col md:flex-row  items-center justify-center mx-auto gap-10 " id="clientes">
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600-500/20 blur-[150px] rounded-full animate-blob" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             Nuestros Clientes
@@ -31,8 +31,20 @@ export function InfiniteGallery() {
             Descubre por qué las empresas líderes eligen a InsideTech como su socio tecnológico de confianza.
           </p>
         </div>
-      </div>
-        <div className="w-full overflow-hidden  pt-10">
+      </div> */}
+        {/* <div className="md:text-start text-center mb-16 "> 
+          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+            Nuestros Clientes
+          </span>
+          <h2 className="text-3xl md:text-lg font-bold text-secondary dark:text-white mb-6">
+            Empresas que confían en nosotros
+          </h2>
+          <p className="text-muted max-w-lg mx-auto text-md">
+            Descubre por qué las empresas líderes eligen a InsideTech como su socio tecnológico de confianza.
+          </p>
+        </div> */}
+        <div className="w-full overflow-hidden flex flex-col justify-center items-center">
+        {/* <span className='h-[0.5px] w-full bg-gray-700'></span> */}
           <div className="flex animate-scroll items-center ">
             {[...clients, ...clients, ...clients].map((client, index) => (
               <div key={`${client.id}-${index}`} className="flex-shrink-0 mx-10">
@@ -45,6 +57,7 @@ export function InfiniteGallery() {
               </div>
             ))}
           </div>
+          {/* <span className='h-[0.5px] w-full bg-gray-700'></span> */}
         </div>
     </section>
 
