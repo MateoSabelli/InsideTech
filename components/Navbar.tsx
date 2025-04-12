@@ -8,6 +8,7 @@ export default function Navbar() {
   return (
     <div className=''>
         <div className=" hidden md:block">
+          
         <NavDemo />
         </div>
         

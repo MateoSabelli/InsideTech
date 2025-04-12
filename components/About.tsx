@@ -73,7 +73,7 @@ export const About = () => {
           ))}
         </div>
       </div>
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-cyan-500/20 blur-[150px] rounded-full animate-blob" />
+      <div className="absolute top-0 left-0 w-[200px] h-[200px]  blur-[150px] rounded-full blur-container -z-0 block animate-blob" />
     </section>
   );
 };
