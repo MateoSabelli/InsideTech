@@ -64,9 +64,9 @@ export default function Assets() {
     ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-16">
     {/* Hero Section */}
-    <section className="pt-24 pb-16 relative overflow-hidden">
+    <section className="pt-24 pb-8 relative overflow-hidden">
       <motion.div
         className="absolute w-[800px] h-[800px] -top-40 -left-40 rounded-full mix-blend-multiply opacity-20"
         animate={{
@@ -318,6 +318,7 @@ export default function Assets() {
             en implementaciones de gran escala. Te guiamos desde la planificación inicial hasta 
             la integración completa con tus procesos de TI.
           </motion.p>
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

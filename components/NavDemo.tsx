@@ -56,9 +56,9 @@ export function NavDemo() {
       <div className="max-w-7xl mx-auto w-full flex items-center justify-between">
         <Link href="/" className="text-white">
           <Image 
-          src="svg/INSIDETECH.svg" 
+          src="/INSIDETECH.svg" 
           alt="InsideTech" 
-          width={200} 
+          width={150} 
           height={200}>
 
           </Image>

@@ -52,7 +52,6 @@ export const Contact = () => {
 
   return (
     <section className="py-20 relative" id="contacto">
-      <div className="absolute top-0 right-0 w-[200px] h-[200px]  blur-[150px] rounded-full blur-container -z-0 block animate-blob" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">

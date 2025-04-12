@@ -13,22 +13,22 @@ const clients = [
 
 export function InfiniteGallery() {
   return (
-    <section className="pb-6" id="clientes">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="pb-28 container mx-auto" id="clientes">
+      <div className=" ">
         <div className="text-center mb-12">
           <p className="text-gray-400 text-md font-semibold tracking-tight">
             Empresas que confían en nosotros
           </p>
         </div>
         
-        <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
+        <div className="flex flex-wrap justify-center items-center space-x-16 gap-y-8">
           {clients.map((client) => (
             <div key={client.id} className="flex items-center justify-center">
               <Image
                 src={client.logo}
                 alt={client.name}
-                width={150}
-                height={60}
+                width={100}
+                height={50}
                 className="grayscale opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>

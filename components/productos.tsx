@@ -44,8 +44,7 @@ export default function Productos() {
       ];
   return (
     <section id="productos" className="py-20 relative ">
-      <div className="absolute top-0 right-0 w-[200px] h-[200px]  blur-[150px] rounded-full blur-container -z-0 block animate-blob" />
-    <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">Nuestros Productos</h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Ofrecemos soluciones integrales para la gestión, monitoreo y optimización de servicios de TI
