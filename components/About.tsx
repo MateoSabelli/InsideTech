@@ -60,8 +60,7 @@ export const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="text-center"
-            >
+              className="text-center">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
                 <value.icon className="w-8 h-8 text-primary" />
               </div>
@@ -73,7 +72,6 @@ export const About = () => {
           ))}
         </div>
       </div>
-      <div className="absolute top-0 left-0 w-[200px] h-[200px]  blur-[150px] rounded-full blur-container -z-0 block animate-blob" />
     </section>
   );
 };

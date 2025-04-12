@@ -81,7 +81,7 @@ export const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full text-black placeholder-black"
+                  className="w-full text-black  placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -95,7 +95,7 @@ export const Contact = () => {
                   value={formData.company}
                   onChange={handleChange}
                   required
-                  className="w-full text-black placeholder-black"
+                  className="w-full text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -110,7 +110,7 @@ export const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full text-black placeholder-black"
+                  className="w-full text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -124,7 +124,7 @@ export const Contact = () => {
                   placeholder="+56 9 XXXX XXXX"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full text-black placeholder-black"
+                  className="w-full text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>

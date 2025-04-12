@@ -49,7 +49,7 @@ export default function RootLayout({
           <div className="absolute -left-1/4 bottom-1/4 w-[600px] h-[600px] bg-gradient-to-t from-blue-400/10 to-transparent rounded-full blur-3xl animate-move animation-delay-6000" />
 
           {/* Mancha inferior derecha */}
-          <div className="absolute right-1/4 -bottom-1/4 w-[550px] h-[550px] bg-gradient-to-t from-blue-400/30 to-transparent rounded-full blur-3xl animate-move animation-delay-8000" />
+          <div className="absolute right-1/4 -bottom-1/4 w-[550px] h-[550px] bg-gradient-to-t from-blue-400/10 to-transparent rounded-full blur-3xl animate-move animation-delay-8000" />
         </div>
 {/*         <ThemeProvider
             attribute="class"

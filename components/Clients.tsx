@@ -27,7 +27,7 @@ export function InfiniteGallery() {
               <Image
                 src={client.logo}
                 alt={client.name}
-                width={100}
+                width={150}
                 height={50}
                 className="grayscale opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
