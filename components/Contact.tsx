@@ -81,7 +81,7 @@ export const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full"
+                  className="w-full text-black placeholder-black"
                 />
               </div>
               <div>
@@ -95,7 +95,7 @@ export const Contact = () => {
                   value={formData.company}
                   onChange={handleChange}
                   required
-                  className="w-full"
+                  className="w-full text-black placeholder-black"
                 />
               </div>
               <div>
@@ -110,7 +110,7 @@ export const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full"
+                  className="w-full text-black placeholder-black"
                 />
               </div>
               <div>
@@ -124,7 +124,7 @@ export const Contact = () => {
                   placeholder="+56 9 XXXX XXXX"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full"
+                  className="w-full text-black placeholder-black"
                 />
               </div>
               <div>
@@ -154,8 +154,8 @@ export const Contact = () => {
                   placeholder="¿En qué podemos ayudarte?"
                   value={formData.message}
                   onChange={handleChange}
+                  className="w-full min-h-[150px] text-black placeholder-black"
                   required
-                  className="w-full min-h-[150px]"
                 />
               </div>
             </div>

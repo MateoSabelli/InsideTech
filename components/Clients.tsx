@@ -1,55 +1,41 @@
 "use client";
 import Image from 'next/image'
+
 const clients = [
-  { id: 1, name: 'Client 1', logo: '/Centralpuerto.svg' },
-  { id: 2, name: 'Client 2', logo: '/BBVA.svg' },
-  { id: 3, name: 'Client 3', logo: '/Aluar.svg' },
-  { id: 4, name: 'Client 4', logo: '/Ledesma.png' },
-  { id: 5, name: 'Client 5', logo: '/Bunge.svg' },
-  { id: 5, name: 'Client 5', logo: '/GrupoProvincia.png' },
-  { id: 5, name: 'Client 5', logo: '/Galeno.png' },
-  { id: 5, name: 'Client 5', logo: '/Aconcagua.png' },
-  { id: 5, name: 'Client 5', logo: '/Sanatorio.png' },
-  { id: 5, name: 'Client 5', logo: '/Arcos.png' },
-  { id: 5, name: 'Client 5', logo: '/Bancor.png' },
-  { id: 5, name: 'Client 5', logo: '/Diagnostico.png' },
+  { id: 1, name: 'Bancor', logo: '/svg/Bancor.svg' },
+  { id: 2, name: 'Aconcagua', logo: '/svg/Aconcagua.svg' },
+  { id: 3, name: 'Arcos Dorados', logo: '/svg/ArcosDorados.svg' },
+  { id: 4, name: 'Diagnostico Maipu', logo: '/svg/Diagnostico.svg' },
+  { id: 5, name: 'Galeno', logo: '/svg/galeno.svg' },
+  { id: 6, name: 'GrupoProvincia', logo: '/svg/GrupoProvincia.svg' },
+  { id: 7, name: 'BBVA', logo: '/svg/BBVA.svg' }
 ]
 
 export function InfiniteGallery() {
   return (
-    <section className="pb-32  " id="clientes">
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600-500/20 blur-[150px] rounded-full animate-blob" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-            Nuestros Clientes
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-6">
+    <section className="pb-6" id="clientes">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <p className="text-gray-400 text-md font-semibold tracking-tight">
             Empresas que confían en nosotros
-          </h2>
-          <p className="text-muted max-w-3xl mx-auto text-lg">
-            Descubre por qué las empresas líderes eligen a InsideTech como su socio tecnológico de confianza.
           </p>
         </div>
-        <div className="w-full overflow-hidden  pt-10">
-      <div className="flex animate-scroll items-center ">
-        {[...clients, ...clients, ...clients].map((client, index) => (
-          <div key={`${client.id}-${index}`} className="flex-shrink-0  mx-16">
-            <Image
-              src={client.logo}
-              alt={client.name}
-              width={160}
-              height={100}
-            />
-          </div>
-        ))}
-      </div>
-    </div>
+        
+        <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
+          {clients.map((client) => (
+            <div key={client.id} className="flex items-center justify-center">
+              <Image
+                src={client.logo}
+                alt={client.name}
+                width={150}
+                height={60}
+                className="grayscale opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
-
-    
-    
   )
 }
 

@@ -52,7 +52,8 @@ import { ReactTyped } from "react-typed"; */
 export const Hero = () => {
   return (
     <div className="min-h-screen flex items-center justify-center  px-4 relative" id="inicio">
-      <div className="max-w-7xl mx-auto text-center h-screen flex flex-col justify-center items-center"> 
+      {/* <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-500/40 blur-[150px] rounded-full animate-blob -z-0 hidden md:block" />
+       */}<div className="max-w-7xl mx-auto text-center h-screen flex flex-col justify-center items-center"> 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -95,7 +96,7 @@ export const Hero = () => {
         </motion.div>
       </div>
       
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500/40 blur-[150px] rounded-full animate-blob" />
-    </div>
+      {/* <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/40 blur-[150px] rounded-full animate-blob" />
+     */}</div>
   );
 };
