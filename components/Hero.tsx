@@ -2,61 +2,12 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
-const FloatingLogos = () => {
-  const logos = [
-    { src: "hero/docker.svg", alt: "Docker", delay: 0 },
-    { src: "hero/kubernetes.svg", alt: "Kubernetes", delay: 0.2 },
-    { src: "hero/aws.svg", alt: "AWS", delay: 0.4 },
-    { src: "hero/azure.svg", alt: "Azure", delay: 0.6 },
-    { src: "hero/ansible.svg", alt: "Ansible", delay: 0.8 },
-    { src: "hero/jenkins.svg", alt: "Jenkins", delay: 1 },
-    { src: "hero/prometheus.svg", alt: "Prometheus", delay: 1.2 },
-  ];
-
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {logos.map((logo) => (
-        <motion.div
-          key={logo.alt}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{
-            opacity: [0, 1, 1, 0],
-            scale: [0.8, 1, 1, 0.8],
-            x: [0, Math.random() * 200 - 100, Math.random() * 200 - 100, 0],
-            y: [0, Math.random() * 200 - 100, Math.random() * 200 - 100, 0],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            delay: logo.delay,
-            ease: "easeInOut",
-          }}
-          className="absolute w-16 h-16"
-          style={{
-            left: `${Math.random() * 80 + 10}%`,
-            top: `${Math.random() * 80 + 10}%`,
-          }}
-        >
-          <div className="relative w-full h-full">
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              fill
-              className="object-contain opacity-50 hover:opacity-100 transition-opacity"
-            />
-          </div>
-        </motion.div>
-      ))}
-    </div>
-  );
-};
 
 export const Hero = () => {
   return (
     <div className="min-h-screen pt-12 flex items-center justify-center px-4 relative overflow-hidden" id="inicio">
-      <FloatingLogos />
+      
       <motion.div
         className="absolute w-[800px] h-[800px] -top-40 -left-40 bg-primary/5 rounded-full mix-blend-multiply filter blur-3xl"
         animate={{
