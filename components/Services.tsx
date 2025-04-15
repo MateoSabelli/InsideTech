@@ -25,35 +25,35 @@ const services = [
     title: "DevOps y Automatización",
     description: "Acelera tu time-to-market con pipelines de CI/CD optimizados. Reducimos tus ciclos de desarrollo en un 60% mientras mejoramos la calidad y estabilidad de tus aplicaciones.",
     link: "/servicios/devops",
-    gradient: "from-purple-500 to-pink-500"
+    gradient: "from-blue-500 to-cyan-500"
   },
   {
     icon: HeadphonesIcon,
     title: "Soporte IT y Outsourcing",
     description: "Tu equipo de TI disponible 24/7. Resolución proactiva de incidentes y mantenimiento preventivo que garantiza una disponibilidad del 99.9% de tus sistemas críticos.",
     link: "/servicios/soporte",
-    gradient: "from-green-500 to-emerald-500"
+    gradient: "from-blue-500 to-cyan-500"
   },
   {
     icon: Activity,
     title: "Monitoreo y Gestión",
     description: "Anticipa problemas antes de que afecten tu negocio. Monitoreo predictivo y gestión proactiva que reduce tus tiempos de inactividad en un 80%.",
     link: "/servicios/monitoreo",
-    gradient: "from-orange-500 to-red-500"
+    gradient: "from-blue-500 to-cyan-500"
   },
   {
     icon: CloudCog,
     title: "Migraciones",
     description: "Migraciones sin interrupciones, resultados extraordinarios. Planificamos y ejecutamos tu transición a la nube con un impacto mínimo en tus operaciones diarias.",
     link: "/servicios/migraciones",
-    gradient: "from-indigo-500 to-blue-500"
+    gradient: "from-blue-500 to-cyan-500"
   },
   {
     icon: Users,
     title: "RRHH Tecnológico",
     description: "El talento que necesitas, cuando lo necesitas. Nuestros profesionales especializados se integran perfectamente a tus equipos, impulsando la innovación y la eficiencia.",
     link: "/servicios/migraciones",
-    gradient: "from-yellow-500 to-amber-500"
+    gradient: "from-blue-500 to-cyan-500"
   },
 ];
 
@@ -93,7 +93,6 @@ export const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className=""
             >
               <div className="group relative bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-transparent rounded-xl p-8 h-full transition-all duration-300 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-300 ${service.gradient}" />
