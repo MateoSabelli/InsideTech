@@ -52,14 +52,14 @@ const components: { title: string; href: string; description: string; logo: stri
 
 export function NavDemo() {
   return (
-    <div className="text-white flex items-center justify-between w-full fixed top-0 left-0 right-0 px-4 h-20 bg-transparent backdrop-blur-sm z-20">
+    <div className="text-white flex items-center justify-between w-full fixed top-0 left-0 right-0 px-4 h-20 bg-white backdrop-blur-sm z-20">
       <div className="max-w-7xl mx-auto w-full flex items-center justify-between">
         <Link href="/" className="text-white">
           <Image 
-          src="/INSIDETECH.svg" 
+          src="/INSIDETECH2.svg" 
           alt="InsideTech" 
-          width={150} 
-          height={200}>
+          width={170} 
+          height={250}>
 
           </Image>
         </Link>
