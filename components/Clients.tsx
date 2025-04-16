@@ -1,4 +1,5 @@
 "use client";
+import { motion } from 'framer-motion';
 import Image from 'next/image'
 
 const clients = [
@@ -13,8 +14,8 @@ const clients = [
 
 export function InfiniteGallery() {
   return (
-    <section className="pb-28 container mx-auto" id="clientes">
-      <div className=" ">
+    <section className="pb-28 " id="clientes">
+      <div className=" container mx-auto">
         <div className="text-center mb-12">
           <p className="text-gray-400 text-md font-semibold tracking-tight">
             Empresas que confían en nosotros
@@ -34,6 +35,7 @@ export function InfiniteGallery() {
             </div>
           ))}
         </div>
+        
       </div>
     </section>
   )

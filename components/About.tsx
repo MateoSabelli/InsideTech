@@ -10,45 +10,46 @@ import {
 const values = [
   {
     icon: Target,
-    title: "Compromiso",
+    title: "23 Años de Experiencia",
     description:
-      "Alineamos cada solución a los objetivos de tu negocio.",
+      "Pioneros en soluciones Linux y open source, transformando la infraestructura tecnológica de empresas globales.",
   },
   {
     icon: MessageSquare,
-    title: "Transparencia",
+    title: "Enfoque Personalizado",
     description:
-      "Comunicamos de forma clara cada etapa y resultado del proyecto.",
+      "Combinamos expertise técnico con un trato cercano, adaptando cada solución a tus necesidades específicas.",
   },
   {
     icon: Rocket,
-    title: "Innovación Continua",
+    title: "Innovación Constante",
     description:
-      "Nos mantenemos actualizados en tecnologías y metodologías (DevOps, Cloud, Contenedores, etc.).",
+      "Mantenemos la vanguardia en DevOps, Cloud y Contenedores, ofreciendo soluciones de última generación.",
   },
   {
     icon: LineChart,
-    title: "Orientación al Éxito",
+    title: "Resultados Comprobados",
     description:
-      "Medimos y supervisamos indicadores para garantizar resultados tangibles.",
+      "Nuestra trayectoria y casos de éxito nos avalan como referentes en la industria tecnológica.",
   },
 ];
 
 export const About = () => {
   return (
-    <section className="py-20  relative" id="nosotros">
+    <section className="py-20 relative" id="nosotros">
+      <div className="absolute top-0 left-0 w-[200px] h-[200px] bg-primary/20 blur-[150px] rounded-full -z-0" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             Quiénes Somos
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-6">
-            Un equipo especializado en infraestructura, DevOps y soporte IT
+          <h2 className="text-3xl md:text-5xl font-bold text-secondary dark:text-white mb-6">
+            Transformando la tecnología desde 2002
           </h2>
           <p className="text-muted max-w-3xl mx-auto text-lg">
-            En InsideTech somos apasionados por la innovación y la excelencia en TI. 
-            Nuestro equipo multidisciplinario cuenta con años de experiencia diseñando, 
-            implementando y gestionando infraestructuras robustas para empresas de diversos sectores.
+            Somos especialistas en soluciones Linux y open source, con más de dos décadas de experiencia 
+            ayudando a empresas a optimizar su infraestructura tecnológica. Nuestro enfoque combina 
+            expertise técnico con un trato cercano, asegurando que cada proyecto alcance su máximo potencial.
           </p>
         </div>
 

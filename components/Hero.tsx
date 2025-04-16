@@ -42,15 +42,16 @@ export const Hero = () => {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-6xl max-w-5xl mx-auto text-center font-bold leading-tight">
             Impulsando tu transformación con soluciones de{" "}
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
               infraestructura y DevOps
             </span>
           </h1>
-          <p className="text-muted max-w-3xl mx-auto text-lg md:text-xl leading-relaxed">
-            Acompañamos a empresas en el diseño, la implementación y el soporte de entornos de TI escalables. 
-            Optimiza tu infraestructura con nuestros servicios de consultoría, DevOps y monitoreo.
+          <p className="text-muted max-w-3xl mx-auto text-lg md:text-lg leading-relaxed">
+            {/* Acompañamos a empresas en el diseño, la implementación y el soporte de entornos de TI escalables. 
+            Optimiza tu infraestructura con nuestros servicios de consultoría, DevOps y monitoreo. */}
+            Desde 2002 ayudamos a empresas a optimizar sus entornos tecnológicos con consultoría, DevOps y monitoreo. Trabajamos con tecnologías open source, simples, seguras y confiables.
           </p>
           <motion.div 
             className="flex flex-col sm:flex-row justify-center gap-6 mt-12"
