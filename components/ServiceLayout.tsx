@@ -22,8 +22,8 @@ export const ServiceLayout = ({
   return (
     <div className="min-h-screen  pt-20">
       <main>
-        <section className="pt-32 pb-20 bg-gradient-to-b">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="pt-32 pb-20 bg-gradient-to-b from-primary/10 to-primary/20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export const ServiceLayout = ({
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="p-6 rounded-2xl bg-white shadow-lg"
+                  className="p-6 rounded-2xl shadow-lg bg-primary/40"
                 >
                   <h3 className="text-xl font-semibold text-secondary mb-3">
                     {feature.title}

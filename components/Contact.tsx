@@ -4,22 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    company: "",
     email: "",
-    phone: "",
-    service: "",
+    company: "",
     message: "",
   });
 
@@ -31,10 +23,8 @@ export const Contact = () => {
     });
     setFormData({
       name: "",
-      company: "",
       email: "",
-      phone: "",
-      service: "",
+      company: "",
       message: "",
     });
   };
@@ -46,129 +36,105 @@ export const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleServiceChange = (value: string) => {
-    setFormData((prev) => ({ ...prev, service: value }));
-  };
-
   return (
-    <section className="py-20 relative" id="contacto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-            Contacto
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-4">
-            Conversemos sobre tu próximo gran proyecto
-          </h2>
-          <p className="text-muted max-w-2xl mx-auto">
-            ¿Listo para dar el siguiente paso en la transformación digital de tu
-            empresa? Completa el formulario y te guiaremos hacia la mejor
-            solución.
-          </p>
-        </div>
+    <section className="relative min-h-[600px] w-full overflow-hidden" id="contacto">
+      {/* Fondo diagonal */}
+      <div className="absolute top-0 right-0 w-[65%] h-full bg-primary skew-x-12 translate-x-32" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="grid md:grid-cols-2 gap-12 py-20">
+          {/* Información de Contacto */}
+          <div className="space-y-8">
+            <h2 className="text-5xl font-bold text-secondary dark:text-white">
+              Contacto
+            </h2>
+            <div className="space-y-8">
+              <div className="flex items-center space-x-6 group">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <Phone className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xl font-medium text-secondary dark:text-white group-hover:text-primary transition-colors">
+                    +54 11 4328-2662
+                  </p>
+                </div>
+              </div>
 
-        <div className="max-w-xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  Nombre completo
-                </label>
+              <div className="flex items-center space-x-6 group">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <Mail className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xl font-medium text-secondary dark:text-white group-hover:text-primary transition-colors">
+                    info@insidetech.com.ar
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-6 group">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <MapPin className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xl font-medium text-secondary dark:text-white group-hover:text-primary transition-colors">
+                    Lavalle 416 | Piso 3
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Formulario */}
+          <div>
+            <h2 className="text-4xl font-bold text-white mb-8">
+              Consultanos
+            </h2>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Input
-                  id="name"
                   name="name"
-                  placeholder="Ingresa tu nombre completo"
+                  placeholder="Nombre"
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full text-black  placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="bg-white border-0 h-12 text-lg"
                 />
-              </div>
-              <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-                  Empresa
-                </label>
                 <Input
-                  id="company"
-                  name="company"
-                  placeholder="Nombre de tu empresa"
-                  value={formData.company}
-                  onChange={handleChange}
-                  required
-                  className="w-full text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Correo electrónico
-                </label>
-                <Input
-                  id="email"
                   name="email"
                   type="email"
-                  placeholder="tu@email.com"
+                  placeholder="Correo electrónico"
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="bg-white border-0 h-12 text-lg"
                 />
               </div>
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                  Teléfono
-                </label>
-                <Input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  placeholder="+56 9 XXXX XXXX"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-              <div>
-                <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
-                  Servicio de interés
-                </label>
-                <Select name="service" value={formData.service} onValueChange={handleServiceChange}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Selecciona un servicio" />
-                  </SelectTrigger>
-                  <SelectContent className="z-20">
-                    <SelectItem value="consultoria">Consultoría</SelectItem>
-                    <SelectItem value="devops">DevOps</SelectItem>
-                    <SelectItem value="soporte">Soporte IT</SelectItem>
-                    <SelectItem value="monitoreo">Monitoreo</SelectItem>
-                    <SelectItem value="migraciones">Migraciones</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Mensaje
-                </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  placeholder="¿En qué podemos ayudarte?"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="w-full min-h-[150px] text-black placeholder-black"
-                  required
-                />
-              </div>
-            </div>
-            <Button
-              type="submit"
-              className="w-full bg-primary hover:bg-primary/90"
-            >
-              Enviar mensaje
-            </Button>
-          </form>
+              <Input
+                name="company"
+                placeholder="Empresa"
+                value={formData.company}
+                onChange={handleChange}
+                required
+                className="bg-white border-0 h-12 text-lg"
+              />
+              <Textarea
+                name="message"
+                placeholder="Mensaje"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="bg-white border-0 min-h-[150px] text-lg resize-none"
+              />
+              <Button
+                type="submit"
+                className="bg-white text-primary hover:bg-white/90 text-lg font-medium h-12 px-8"
+              >
+                ENVIAR
+              </Button>
+            </form>
+          </div>
         </div>
       </div>
-      
     </section>
   );
 };

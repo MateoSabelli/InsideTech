@@ -1,27 +1,27 @@
-"use client";
-import { motion } from "framer-motion";
-import Image from "next/image";
+'use client';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const partners = [
   {
-    name: "IBM",
-    logo: "/Partners/IBM2.svg",
+    name: 'Aconcagua',
+    logo: '/svg/Aconcagua.svg',
   },
   {
-    name: "Invgate",
-    logo: "/Partners/invgate.svg",
+    name: 'BBVA',
+    logo: '/svg/BBVA.svg',
   },
   {
-    name: "Red Hat",
-    logo: "/Partners/redhat.svg",
+    name: 'Galeno',
+    logo: '/svg/galeno.svg',
   },
   {
-    name: "Zabbix",
-    logo: "/Partners/zabbix.svg",
+    name: 'GrupoProvincia',
+    logo: '/svg/GrupoProvincia.svg',
   },
   {
-    name: "Grafana",
-    logo: "/Partners/grafana.svg",
+    name: 'Arcos Dorados',
+    logo: '/svg/ArcosDorados.svg',
   },
 ];
 
@@ -30,42 +30,39 @@ const duplicatedPartners = [...partners, ...partners];
 
 export const Partner = () => {
   return (
-    <section className="py-20 overflow-hidden" id="partners">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-            Nuestros Partners
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary dark:text-white mt-2">
-            Trabajamos con los mejores
+    <section className="container mx-auto overflow-hidden" id="partners">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-row gap-4">
+        <div className="text-start mb-16">
+          <h2 className="text-3xl md:text-3xl font-semibold text-secondary dark:text-white mt-2">
+            Empresas que confían en nosotros
           </h2>
         </div>
-
-        <div className="relative w-full">
+        <div className="relative w-full overflow-hidden">
           <motion.div
             className="flex gap-8 items-center"
             animate={{
-              x: ["0%", "-50%"],
+              x: ['0%', '-50%'],
             }}
             transition={{
               x: {
-                duration: 20,
+                duration: 25,
                 repeat: Infinity,
-                ease: "linear",
+                ease: 'linear',
+                repeatType: 'reverse',
               },
             }}
           >
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
-                className="flex-shrink-0 bg-white dark:bg-gray-800/50 shadow-md rounded-lg p-8 flex items-center justify-center min-h-[120px] min-w-[250px]"
+                className="flex-shrink-0  dark:bg-gray-800/50  rounded-lg p-8 flex items-center justify-center min-h-[120px] min-w-[250px]"
               >
                 <div className="relative w-full h-[40px] flex items-center justify-center">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
-                    width={150}
-                    height={50}
+                    width={200}
+                    height={100}
                     className="object-contain hover:filter-none transition-all duration-300"
                     priority
                   />
@@ -73,8 +70,7 @@ export const Partner = () => {
               </div>
             ))}
           </motion.div>
-
-          </div>
+        </div>
       </div>
     </section>
   );

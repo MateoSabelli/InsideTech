@@ -1,13 +1,14 @@
-"use client";
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import Link from "next/link";
-
+'use client';
+import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export const Hero = () => {
   return (
-    <div className="min-h-screen pt-12 flex items-center justify-center px-4 relative overflow-hidden" id="inicio">
-      
+    <div
+      className="min-h-screen pt-12 flex items-center justify-center px-4 relative overflow-hidden"
+      id="inicio"
+    >
       <motion.div
         className="absolute w-[800px] h-[800px] -top-40 -left-40 bg-primary/5 rounded-full mix-blend-multiply filter blur-3xl"
         animate={{
@@ -18,7 +19,7 @@ export const Hero = () => {
         transition={{
           duration: 20,
           repeat: Infinity,
-          ease: "linear",
+          ease: 'linear',
         }}
       />
       <motion.div
@@ -31,11 +32,14 @@ export const Hero = () => {
         transition={{
           duration: 25,
           repeat: Infinity,
-          ease: "linear",
+          ease: 'linear',
         }}
       />
 
-      <div className="max-w-7xl mx-auto text-center relative z-10 h-screen flex flex-col justify-center items-center"> 
+      <div className="max-w-7xl mx-auto text-center relative z-10 h-screen flex flex-col justify-center items-center">
+        <div className="inline-flex items-center px-6 mb-6 py-1 bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full text-primary font-semibold text-sm shadow-lg">
+          + 20 años de experiencia
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -43,7 +47,7 @@ export const Hero = () => {
           className="space-y-8"
         >
           <h1 className="text-5xl md:text-6xl max-w-5xl mx-auto text-center font-bold leading-tight">
-            Impulsando tu transformación con soluciones de{" "}
+            Impulsando tu transformación con soluciones de{' '}
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
               infraestructura y DevOps
             </span>
@@ -51,9 +55,11 @@ export const Hero = () => {
           <p className="text-muted max-w-3xl mx-auto text-lg md:text-lg leading-relaxed">
             {/* Acompañamos a empresas en el diseño, la implementación y el soporte de entornos de TI escalables. 
             Optimiza tu infraestructura con nuestros servicios de consultoría, DevOps y monitoreo. */}
-            Desde 2002 ayudamos a empresas a optimizar sus entornos tecnológicos con consultoría, DevOps y monitoreo. Trabajamos con tecnologías open source, simples, seguras y confiables.
+            Desde 2002 ayudamos a empresas a optimizar sus entornos tecnológicos
+            con consultoría, DevOps y monitoreo. Trabajamos con tecnologías open
+            source, simples, seguras y confiables.
           </p>
-          <motion.div 
+          <motion.div
             className="flex flex-col sm:flex-row justify-center gap-6 mt-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
