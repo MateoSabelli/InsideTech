@@ -134,10 +134,7 @@ export default function Diseño() {
         <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col justify-center items-start gap-4">
             <h1 className="text-5xl md:text-6xl mx-auto text-start font-bold leading-tight">
-              INNOVACIÓN Y TECNOLOGÍA QUE{' '}
-              <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                TRANSFORMAN TU NEGOCIO
-              </span>
+              INNOVACIÓN Y TECNOLOGÍA QUE TRANSFORMAN TU NEGOCIO
             </h1>
             <p className="text-md mb-4 text-white">
               En InsideTech impulsamos la transformación digital de las

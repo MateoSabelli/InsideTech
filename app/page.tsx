@@ -8,8 +8,6 @@ import { NavDemo } from '@/components/NavDemo';
 export default function Home() {
   return (
     <div className="min-h-screen   relative overflow-hidden ">
-      {/* Blur effect */}
-
       <div className="h-[10vh] sm:h-0"></div>
       <NavDemo />
       <Hero />

@@ -32,11 +32,11 @@ export const Partner = () => {
   return (
     <section className="container mx-auto overflow-hidden" id="partners">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-row gap-4">
-        <div className="text-start mb-16">
+        {/* <div className="text-start mb-16">
           <h2 className="text-3xl md:text-3xl font-semibold text-secondary dark:text-white mt-2">
             Empresas que confían en nosotros
           </h2>
-        </div>
+        </div> */}
         <div className="relative w-full overflow-hidden">
           <motion.div
             className="flex gap-8 items-center"
@@ -45,7 +45,7 @@ export const Partner = () => {
             }}
             transition={{
               x: {
-                duration: 25,
+                duration: 20,
                 repeat: Infinity,
                 ease: 'linear',
                 repeatType: 'reverse',

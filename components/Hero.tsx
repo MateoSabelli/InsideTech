@@ -1,14 +1,63 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const Hero = () => {
   return (
     <div
-      className="min-h-screen pt-12 flex items-center justify-center px-4 relative overflow-hidden"
+      className="relative min-h-screen pt-12 flex items-center justify-center px-4 overflow-hidden"
       id="inicio"
     >
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="absolute inset-0 overflow-hidden "
+      >
+        {[
+          { src: '/hero/ansible.svg', top: '30%', left: '7%' },
+          { src: '/hero/aws.svg', top: '30%', right: '7%' },
+          { src: '/hero/azure.svg', bottom: '10%', left: '30%' },
+          { src: '/hero/docker.svg', top: '15%', right: '30%' },
+          { src: '/hero/kubernetes.svg', bottom: '25%', right: '15%' },
+          { src: '/hero/jenkins.svg', top: '15%', left: '30%' },
+          { src: '/hero/prometheus.svg', bottom: '30%', left: '14%' },
+        ].map((tech, index) => (
+          <motion.div
+            key={index}
+            className="absolute"
+            style={{
+              top: tech.top,
+              left: tech.left,
+              right: tech.right,
+              bottom: tech.bottom,
+            }}
+            animate={{
+              y: ['0%', '20%', '0%'],
+              x: ['0%', '10%', '0%'],
+              rotate: [0, 10, -10, 0],
+            }}
+            transition={{
+              duration: Math.random() * 5 + 8,
+              repeat: Infinity,
+              ease: 'easeInOut',
+              delay: index * 0.2,
+            }}
+          >
+            <div className="animate-pulse p-4 rounded-xl border border-blue-300/60 bg-white/5 backdrop-blur-sm shadow-md shadow-blue-300/80 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]">
+              <Image
+                src={tech.src}
+                alt="Technology logo"
+                width={40}
+                height={40}
+                className="opacity-80 dark:opacity-10 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
       <motion.div
         className="absolute w-[800px] h-[800px] -top-40 -left-40 bg-primary/5 rounded-full mix-blend-multiply filter blur-3xl"
         animate={{
