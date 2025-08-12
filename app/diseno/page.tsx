@@ -1,162 +1,14 @@
 import { Button } from '@/components/ui/button';
-import { Compare } from '@/components/ui/compare';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
-import Image from 'next/image';
 import { Services } from '@/components/Services';
-import { Partner } from '@/components/Partner';
+import { Clientes } from '@/components/Partner';
+import Navbar2 from '@/components/pagina2/navbar2';
 
 export default function Diseño() {
-  const productos = [
-    {
-      name: 'Grafana',
-      image: '/Partners/grafana.svg',
-    },
-    {
-      name: 'Red Hat',
-      image: '/Partners/redhat.svg',
-    },
-    {
-      name: 'IBM',
-      image: '/Partners/IBM.svg',
-    },
-    {
-      name: 'Ansible',
-      image: '/hero/ansible.svg',
-    },
-    {
-      name: 'Jenkins',
-      image: '/hero/jenkins.svg',
-    },
-    {
-      name: 'Kubernetes',
-      image: '/hero/kubernetes.svg',
-    },
-    {
-      name: 'Prometheus',
-      image: '/hero/prometheus.svg',
-    },
-    {
-      name: 'Nagios',
-      image: '/Partners/nagios.svg',
-    },
-    {
-      name: 'Docker',
-      image: '/hero/docker.svg',
-    },
-    {
-      name: 'AWS',
-      image: '/hero/aws.svg',
-    },
-    {
-      name: 'IBM2',
-      image: '/Partners/IBM2.svg',
-    },
-    {
-      name: 'Invgate',
-      image: '/Partners/invgate.svg',
-    },
-    {
-      name: 'Nagios',
-      image: '/Partners/nagios.svg',
-    },
-    {
-      name: 'Zabbix',
-      image: '/Partners/zabbix.svg',
-    },
-  ];
   return (
     <div className="min-h-screen bg-white">
       {/* Top Blue Bar */}
-      <div className="flex flex-col sticky top-0 z-50 bg-white ">
-        <div className="bg-blue-400 text-white py-3 px-4 pr-10 ">
-          <div className="container mx-auto flex justify-end items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm">
-              <Facebook className="w-4 h-4" />
-              <Instagram className="w-4 h-4" />
-              <Linkedin className="w-4 h-4" />
-            </div>
-          </div>
-        </div>
-        {/* Navigation */}
-        <nav className=" shadow-sm border-b mx-auto w-full max-w-7xl">
-          <div className="flex items-center justify-between py-5">
-            <div className="flex items-center space-x-2">
-              <Image
-                src="/INSIDETECH2.svg"
-                alt="logo"
-                width={150}
-                height={150}
-              />
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a
-                href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
-              >
-                Nosotros
-              </a>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
-              >
-                Servicios
-              </a>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
-              >
-                Productos
-              </a>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
-              >
-                Eventos
-              </a>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
-              >
-                Clientes
-              </a>
-            </div>
-            <Button className="bg-gray-700 hover:bg-gray-800 text-white px-6">
-              CONTÁCTANOS
-            </Button>
-          </div>
-        </nav>
-      </div>
+      <Navbar2 />
       {/* Hero Section */}
-      <section className="bg-[#282C34] text-white py-16 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-blue-900/20 to-transparent"></div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto relative z-10">
-          <div className="flex flex-col justify-center items-start gap-4">
-            <h1 className="text-5xl md:text-6xl mx-auto text-start font-bold leading-tight">
-              INNOVACIÓN Y TECNOLOGÍA QUE TRANSFORMAN TU NEGOCIO
-            </h1>
-            <p className="text-md mb-4 text-white">
-              En InsideTech impulsamos la transformación digital de las
-              organizaciones mediante soluciones tecnológicas innovadoras y
-              estratégicas.
-            </p>
-            <Button className="bg-white  text-slate-800 hover:bg-gray-100 px-8 py-3 text-md font-semibold rounded-md">
-              CONTÁCTANOS PARA TU PROYECTO
-            </Button>
-          </div>
-          <div className="flex justify-center items-center w-full mx-auto">
-            <Compare
-              firstImage="https://assets.aceternity.com/code-problem.png"
-              secondImage="https://assets.aceternity.com/code-solution.png"
-              firstImageClassName="object-cover object-left-top"
-              secondImageClassname="object-cover object-left-top"
-              className="h-[250px] w-[200px] md:h-[500px] md:w-[500px]"
-              slideMode="hover"
-            />
-          </div>
-        </div>
-      </section>
 
       {/* Stats Section */}
       <section className="py-12 px-4 bg-gray-50">
@@ -194,7 +46,7 @@ export default function Diseño() {
       </section>
 
       {/* Main Content Section */}
-      <section className="py-16 px-4  bg-gray-50">
+      <section className="py-16 px-4  bg-gray-50" id="nosotros">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Column - Nosotros */}
@@ -339,39 +191,14 @@ export default function Diseño() {
       </section>
 
       {/* Section 2 */}
-      <section className="py-12 px-4 bg-gray-50">
+      <section className="py-12 px-4 bg-gray-50" id="servicios">
         <Services />
       </section>
 
       {/* Productos Section */}
-      <section className="py-16 px-4 bg-[#2B4158] text-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-4 ">Productos</h2>
-          <p className="text-center mb-12 max-w-3xl mx-auto text-gray-300  leading-relaxed ">
-            Accedé a licencias, suscripciones y herramientas de software de
-            primer nivel, gracias a nuestros socios estratégicos.
-          </p>
 
-          {/* Grid de iconos - Primera fila */}
-          <div className="grid grid-cols-4 md:grid-cols-8 gap-6 mb-6">
-            {productos.map((producto) => (
-              <div
-                key={producto.name}
-                className="bg-white p-4 rounded-lg aspect-square flex items-center justify-center"
-              >
-                <Image
-                  src={producto.image}
-                  alt={producto.name}
-                  width={70}
-                  height={70}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="py-16   bg-gray-50">
-        <Partner />
+      <section className="py-16   bg-gray-50" id="clientes">
+        <Clientes />
       </section>
 
       {/* Sección de Reclutamiento */}

@@ -28,9 +28,9 @@ const partners = [
 // Duplicamos los partners para el efecto infinito
 const duplicatedPartners = [...partners, ...partners];
 
-export const Partner = () => {
+export const Clientes = () => {
   return (
-    <section className="container mx-auto overflow-hidden" id="partners">
+    <section className="container mx-auto overflow-hidden pt-5" id="clientes">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-row gap-4">
         {/* <div className="text-start mb-16">
           <h2 className="text-3xl md:text-3xl font-semibold text-secondary dark:text-white mt-2">

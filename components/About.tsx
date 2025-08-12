@@ -56,7 +56,7 @@ export const About = () => {
               enfoque único que asegura calidad, eficiencia e innovación en cada
               proyecto.
             </p>
-            <p className="text-secondary max-w-lg text-xl mt-4 font-bold">
+            {/* <p className="text-secondary max-w-lg text-xl mt-4 font-bold">
               Nuestra Visión
             </p>
             <p className="text-muted max-w-3xl text-md leading-relaxed">
@@ -65,7 +65,7 @@ export const About = () => {
               la cercanía y compromiso con nuestros clientes, y la capacidad de
               innovar de manera constante para generar valor en cada etapa del
               camino.
-            </p>
+            </p> */}
             <Button className="mt-4">
               <Link href="/about">Leer más</Link>
             </Button>
