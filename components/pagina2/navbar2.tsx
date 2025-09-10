@@ -1,81 +1,51 @@
 'use client';
 import React, { useState } from 'react';
-import { Button } from '../ui/button';
-import { Facebook, Instagram, Linkedin, Menu, X } from 'lucide-react';
+import { Mail, Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 export default function Navbar2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const navItems = [
+    { name: 'Nosotros', href: '/nosotros' },
+    { name: 'Servicios', href: '/servicios' },
+    { name: 'Productos', href: '/productos' },
+    { name: 'Eventos', href: '/eventos' },
+    { name: 'Clientes', href: '/clientes' },
+  ];
+
   return (
     <div className="flex flex-col w-full sticky top-0 z-50 bg-white">
-      {/* Barra superior de redes sociales */}
-      <div className="bg-blue-400 text-white py-2 px-4">
-        <div className="flex justify-end items-center space-x-4 md:max-w-7xl mx-auto">
-          <div className="flex items-center space-x-2 text-sm">
-            <Facebook className="w-4 h-4" />
-            <Instagram className="w-4 h-4" />
-            <Linkedin className="w-4 h-4" />
-          </div>
-        </div>
-      </div>
-
       {/* Navegación principal */}
       <nav className="shadow-sm border-b">
-        <div className="flex items-center justify-between py-3 px-4 md:py-5 md:max-w-7xl mx-auto">
+        <div className="flex items-center justify-between py-3 pr-4 md:py-5 md:max-w-7xl mx-auto">
           <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src="/INSIDETECH2.svg"
-              alt="logo"
-              width={120}
-              height={120}
-              className="md:w-[150px]"
-            />
+            <Image src="/Logos/logo.png" alt="logo" width={200} height={150} />
           </Link>
 
-          {/* Menú de escritorio */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="/#nosotros"
-              className="text-gray-700 hover:text-blue-600 font-medium "
-            >
-              Nosotros
-            </a>
-            <a
-              href="/#servicios"
-              className="text-gray-700 hover:text-blue-600 font-medium"
-            >
-              Servicios
-            </a>
-            <a
-              href="/#productos"
-              className="text-gray-700 hover:text-blue-600 font-medium"
-            >
-              Productos
-            </a>
-            <a
-              href="/#eventos"
-              className="text-gray-700 hover:text-blue-600 font-medium"
-            >
-              Eventos
-            </a>
-            <a
-              href="/#clientes"
-              className="text-gray-700 hover:text-blue-600 font-medium"
-            >
-              Clientes
-            </a>
-            <Button className="bg-gray-700 hover:bg-gray-800 text-white px-6">
-              CONTÁCTANOS
-            </Button>
+          <div className="space-x-8 hidden md:flex">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-gray-700 hover:text-blue-600 font-medium"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+          <div className="hidden md:flex items-center space-x-6">
+            <div className="flex items-center space-x-2 text-sm">
+              <Mail className="w-5 h-5 text-[#355882]" />
+              <FaLinkedinIn className="w-5 h-5 text-[#355882]" />
+              <FaWhatsapp className="w-5 h-5 text-[#355882]" />
+            </div>
           </div>
 
           {/* Botón de menú móvil */}
           <div className="flex items-center space-x-4 md:hidden">
-            <Button className="bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 text-sm">
-              CONTACTO
-            </Button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-blue-600"
