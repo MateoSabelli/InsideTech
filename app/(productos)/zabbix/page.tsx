@@ -86,12 +86,12 @@ export default function Zabbix() {
                   </div>
                 </div>
               </div>
-              <div className="rounded-lg p-6 min-h-[400px] flex items-center justify-center ">
+              <div className="rounded-lg p-6 min-h-[400px] flex items-start justify-center ">
                 <Image
                   src="/zabbix/dashboard3.png"
                   alt="Dashboard de Zabbix mostrando métricas en tiempo real"
-                  width={400}
-                  height={400}
+                  width={450}
+                  height={450}
                   className="rounded-lg "
                 />
               </div>
@@ -103,13 +103,13 @@ export default function Zabbix() {
                 <Image
                   src="/zabbix/dashboard1.png"
                   alt="Dashboard de Zabbix mostrando métricas en tiempo real"
-                  width={700}
+                  width={500}
                   height={500}
                   className="rounded-lg "
                 />
               </div>
-              <div className="mt-16">
-                <h3 className="text-3xl font-medium text-[#6AA2CC] mb-8">
+              <div className="mt-8">
+                <h3 className="text-3xl font-medium text-[#6AA2CC] mb-4">
                   Características destacadas
                 </h3>
               </div>
@@ -179,7 +179,7 @@ export default function Zabbix() {
 
           {/* Sección de beneficios finales */}
           <div className="mt-12">
-            <div className="text-center mb-4">
+            <div className="text-center ">
               <p className="text-3xl font-semibold text-[#39506D] max-w-7xl mx-auto">
                 Con Zabbix, su empresa obtiene control total, reduciendo tiempos
                 de inactividad, optimizando recursos y mejorando la experiencia
@@ -188,7 +188,7 @@ export default function Zabbix() {
             </div>
 
             {/* Mockup de dashboards */}
-            <div className="grid md:grid-cols-2 mb-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-20 mb-4">
               <div className="rounded-lg  md:min-h-[400px] min-h-[300px] flex items-center justify-center">
                 <Image
                   src="/zabbix/dashboard4.png"
@@ -211,7 +211,7 @@ export default function Zabbix() {
           </div>
 
           {/* CTA final */}
-          <div className="mt-4 text-center max-w-5xl mx-auto">
+          <div className=" text-center max-w-5xl mx-auto">
             <h3 className="text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
               Contactanos para una demo personalizada y descubrí cómo Zabbix
               puede transformar la gestión de tu infraestructura.

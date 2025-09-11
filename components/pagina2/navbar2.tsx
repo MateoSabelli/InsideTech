@@ -25,12 +25,12 @@ export default function Navbar2() {
             <Image src="/Logos/logo.png" alt="logo" width={200} height={150} />
           </Link>
 
-          <div className="space-x-8 hidden md:flex">
+          <div className="space-x-6 hidden md:flex">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-gray-700 hover:text-blue-600 text-base font-medium"
               >
                 {item.name}
               </Link>

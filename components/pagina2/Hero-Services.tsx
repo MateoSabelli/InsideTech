@@ -12,7 +12,7 @@ export default function HeroServices({
   description,
 }: HeroServicesProps) {
   return (
-    <div className="bg-[#193C58] min-h-[210px] py-8 px-4 sm:px-6 lg:px-8 flex justify-space-between items-center">
+    <div className="bg-[#193C58] min-h-[20vh] py-8 px-4 sm:px-6 lg:px-8 flex justify-space-between items-center">
       <div className="h-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center lg:justify-between gap-6 lg:gap-8 w-full">
         <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold text-center lg:text-left max-w-lg lg:max-w-none">
           {title}
