@@ -194,7 +194,7 @@ export default function Grafana() {
           </div>
 
           {/* Sección de beneficios finales */}
-          <div className="mt-12">
+          <div className="mt-20">
             <div className="text-center ">
               <p className="text-3xl font-semibold text-[#39506D] max-w-7xl mx-auto">
                 Con Grafana, centralizá y visualizá tus métricas, <br /> detectá
