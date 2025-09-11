@@ -188,22 +188,22 @@ export default function Zabbix() {
             </div>
 
             {/* Mockup de dashboards */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-20 mb-4">
-              <div className="rounded-lg  md:min-h-[400px] min-h-[300px] flex items-center justify-center">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-20 mb-4 ">
+              <div className="rounded-lg  py-8 flex items-center justify-center">
                 <Image
                   src="/zabbix/dashboard4.png"
                   alt="Dashboard de Zabbix mostrando métricas en tiempo real"
-                  width={400}
-                  height={400}
+                  width={500}
+                  height={300}
                   className="rounded-lg "
                 />
               </div>
-              <div className="rounded-lg  md:min-h-[400px] min-h-[300px] flex items-center justify-center">
+              <div className="rounded-lg  py-8 flex items-center justify-center">
                 <Image
                   src="/zabbix/dashboard5.png"
                   alt="Dashboard de Zabbix mostrando métricas en tiempo real"
-                  width={400}
-                  height={400}
+                  width={500}
+                  height={300}
                   className="rounded-lg "
                 />
               </div>
