@@ -18,7 +18,7 @@ export default function HeroServices({
           {title}
         </h1>
         <div className="flex flex-col items-center justify-center gap-4 lg:gap-4 w-full md:w-auto">
-          <p className="text-white text-base sm:text-lg lg:text-xl max-w-xs sm:max-w-md md:max-w-2xl font-medium text-center lg:text-left leading-relaxed">
+          <p className="text-white text-base sm:text-lg lg:text-xl max-w-xs sm:max-w-md md:max-w-2xl font-medium text-center  leading-relaxed">
             {description}
           </p>
           <Button className="bg-[#F0F3F7] text-[#39506d] rounded-2xl hover:bg-gray-100 transition-colors w-[250px]">
