@@ -6,7 +6,7 @@ import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 export const Footer = () => {
   return (
     <footer className="bg-[#39506D] text-white py-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Menú */}
           <div className="flex flex-col items-center">
@@ -108,16 +108,16 @@ export const Footer = () => {
           {/* Logo y Contacto */}
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-start">
-              <div className="mb-6">
+              <div className="mb-3">
                 <Image
-                  src="/Logos/image.png"
+                  src="/Logos/logoFooter.svg"
                   alt="InsideTech Logo"
                   width={200}
                   height={80}
                   className="mb-4"
                 />
               </div>
-              <div className="space-y-2 text-white">
+              <div className="space-y-2 text-white pl-2">
                 <p className="text-sm">
                   <span className="font-medium">Teléfono:</span> +54 11 4328 -
                   2662
