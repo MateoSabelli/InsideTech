@@ -6,7 +6,7 @@ import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 export const Footer = () => {
   return (
     <footer className="bg-[#39506D] text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Menú */}
           <div className="flex flex-col items-center">
@@ -110,7 +110,7 @@ export const Footer = () => {
             <div className="flex flex-col items-start">
               <div className="mb-6">
                 <Image
-                  src="/INSIDETECH.svg"
+                  src="/Logos/image.png"
                   alt="InsideTech Logo"
                   width={200}
                   height={80}

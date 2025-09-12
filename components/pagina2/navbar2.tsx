@@ -46,7 +46,7 @@ export default function Navbar2() {
             <Image src="/Logos/logo.png" alt="logo" width={200} height={150} />
           </Link>
 
-          <div className="space-x-6 hidden md:flex">
+          <div className="space-x-6 hidden md:flex h-auto">
             {navItems.map((item) => (
               <div
                 key={item.name}
@@ -64,7 +64,7 @@ export default function Navbar2() {
 
                 {/* Dropdown Menu */}
                 {item.dropdown && hoveredItem === item.name && (
-                  <div className="absolute top-full left-0 mt-1 w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                  <div className="absolute top-full left-0  w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                     <div className="py-2">
                       {item.dropdown.map((dropdownItem) => (
                         <Link
