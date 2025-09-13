@@ -87,7 +87,7 @@ export const Footer = () => {
                   },
                   {
                     icon: <ChevronRight className="w-4 h-4" />,
-                    name: 'Consultoría',
+                    name: 'Cloud',
                     href: '/consultoria',
                   },
                 ].map((item) => (

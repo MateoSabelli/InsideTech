@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { Mail, Menu, X, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { RiWhatsappFill } from 'react-icons/ri';
 
 export default function Navbar2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar2() {
       href: '/servicios',
       dropdown: [
         { name: 'Automatización', href: '/automatizacion' },
-        { name: 'Consultoría', href: '/consultoria' },
+        { name: 'Consultoría Cloud', href: '/consultoria' },
         { name: 'DevOps', href: '/devops' },
         { name: 'ITSM', href: '/itsm' },
         { name: 'Observabilidad', href: '/observabilidad' },
@@ -29,6 +30,7 @@ export default function Navbar2() {
       dropdown: [
         { name: 'Grafana', href: '/grafana' },
         { name: 'Zabbix', href: '/zabbix' },
+        { name: 'Red Hat', href: '/redhat' },
         { name: 'InvGate Assets', href: '/invgateAssets' },
         { name: 'InvGate Service Desk', href: '/invgateServiceDesk' },
       ],
@@ -84,9 +86,18 @@ export default function Navbar2() {
 
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-2 text-sm">
-              <Mail className="w-5 h-5 text-[#355882]" />
-              <FaLinkedinIn className="w-5 h-5 text-[#355882]" />
-              <FaWhatsapp className="w-5 h-5 text-[#355882]" />
+              <Link href="mailto:info@insidetech.com.ar" target="_blank">
+                <Mail className="w-5 h-5 text-[#2d2d2d]" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/inside-tech"
+                target="_blank"
+              >
+                <FaLinkedinIn className="w-5 h-5 text-[#2d2d2d]" />
+              </Link>
+              <Link href="https://wa.me/5491168240315" target="_blank">
+                <RiWhatsappFill className="w-5 h-5 text-[#2d2d2d]" />
+              </Link>
             </div>
           </div>
 
