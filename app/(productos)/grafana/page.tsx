@@ -228,7 +228,7 @@ export default function Grafana() {
           {/* CTA final */}
           <div className=" text-center max-w-5xl mx-auto">
             <h3 className="text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
-              En InsideTech implementamos Grafana de forma rápida, segura y
+              Contactanos para implementar Grafana de forma rápida, segura y
               adaptada a las necesidades de tu organización
             </h3>
             <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">

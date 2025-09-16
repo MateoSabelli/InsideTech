@@ -14,8 +14,10 @@ export default function ITSM() {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl max-w-7xl mx-auto font-semibold text-[#39506D] mb-12">
-            Implementamos soluciones que te permiten administrar, automatizar y
-            optimizar tus servicios tecnológicos con las mejores prácticas del
+            Implementamos soluciones que te permiten administrar, automatizar y{' '}
+            <br />
+            optimizar tus servicios tecnológicos con las mejores prácticas del{' '}
+            <br />
             mercado, basadas en ITIL®
           </h2>
         </div>

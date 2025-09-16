@@ -9,13 +9,14 @@ export default function Redhat() {
     <div className="">
       <HeroServices
         title="Red Hat"
-        description="Red Hat es un líder mundial en soluciones de software de código abierto para empresas."
+        description="Soluciones de software de código abierto para empresas"
       />
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl max-w-4xl mx-auto font-semibold text-[#39506D] mb-12">
-            Ofrecemos una amplia gama de servicios que permiten a las
-            organizaciones construir, implementar y gestionar aplicaciones en
+          <h2 className="text-3xl max-w-7xl mx-auto font-semibold text-[#39506D] mb-12">
+            Ofrecemos una amplia gama de servicios que permiten a las <br />
+            organizaciones construir, implementar y gestionar aplicaciones en{' '}
+            <br />
             diferentes entornos
           </h2>
         </div>
@@ -24,15 +25,15 @@ export default function Redhat() {
             {/* Columna izquierda - ¿Qué es Zabbix? */}
             <div>
               <h3 className="text-3xl font-medium text-[#6AA2CC] mb-6">
-                ¿Qué es Red Hat?
+                ¿Porque utilizarlo?
               </h3>
               <div className="space-y-4 text-gray-700">
                 <p className="text-lg">
-                  Ofrece la plataforma más avanzada para ejecutar cargas de
-                  trabajo críticas, respaldada por el soporte empresarial que tu
-                  organización requiere. Sus soluciones escalables y flexibles
-                  se adaptan y evolucionan al ritmo de las necesidades de tu
-                  negocio.
+                  Red Hat ofrece la plataforma más avanzada para ejecutar cargas
+                  de trabajo críticas, respaldada por el soporte empresarial que
+                  tu organización requiere. Sus soluciones escalables y
+                  flexibles se adaptan y evolucionan al ritmo de las necesidades
+                  de tu negocio.
                 </p>
                 <p className="text-lg">
                   En InsideTech, contamos con la experiencia para evaluar tus
@@ -41,7 +42,7 @@ export default function Redhat() {
                 </p>
               </div>
 
-              <div className="rounded-lg py-8 flex items-start justify-start ">
+              <div className="rounded-lg py-8 flex items-start justify-start ml-6">
                 <Image
                   src="/redhat/dashboard.png"
                   alt="Dashboard de Grafana mostrando métricas en tiempo real"
@@ -56,57 +57,57 @@ export default function Redhat() {
             <div>
               <div>
                 <div className="mb-8">
-                  <h4 className="text-3xl font-medium text-[#6AA2CC] mb-4">
+                  <h4 className="text-3xl font-medium text-[#6AA2CC] mb-6">
                     Principales beneficios
                   </h4>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-lg">
                     La tecnología abierta se basa en soluciones y estándares de
                     código libre o compartido, que permiten su uso, modificación
                     y distribución fomentando la colaboración y la innovación.
                   </p>
                 </div>
-                <p className="text-gray-700 text-base font-semibold">
+                <p className="text-[#39506D] text-base font-semibold">
                   Ventajas de utilizar Red Hat:
                 </p>
-                <div className="space-y-4 mt-8">
+                <div className="space-y-5 mt-6">
                   <div className="flex items-start gap-3">
-                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
+                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
                       Soporte empresarial de primer nivel.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
+                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
                       Estabilidad y confiabilidad.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
+                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
                       Seguridad reforzada.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
+                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
                       Escalabilidad y alto rendimiento.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
+                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
                       Compatibilidad certificada.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
+                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
                       Automatización y eficiencia operativa.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
+                    <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
                       Flexibilidad en entornos híbridos y multinube.
                     </p>
@@ -121,7 +122,7 @@ export default function Redhat() {
             {/* Sistemas Operativos Empresariales */}
             <div className="bg-white rounded-lg grid grid-cols-2 gap-6 items-center justify-center">
               <div>
-                <h3 className="text-3xl font-semibold text-[#6AA2CC] mb-6">
+                <h3 className="text-3xl font-medium text-[#6AA2CC] mb-8">
                   Sistemas Operativos Empresariales
                 </h3>
                 <p className="text-gray-700 text-base mb-4  leading-relaxed ">

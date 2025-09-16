@@ -5,7 +5,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardHeader,
   CardTitle,
 } from '@/components/ui/card';
 import Image from 'next/image';
@@ -90,17 +89,15 @@ export default function Automatizacion() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-4 md:gap-24 py-16">
+            <div className="grid lg:grid-cols-3 gap-12 py-16 max-w-5xl mx-auto">
               <Card className="rounded-2xl border shadow-sm">
-                <CardContent className="p-6">
-                  <CardHeader>
-                    <Lightbulb className="w-10 h-10 text-[#39506D] " />
-                    <CardTitle className="text-3xl font-medium text-[#39506D] mb-2">
-                      Simple
-                    </CardTitle>
-                  </CardHeader>
-                  <CardDescription className=" font-medium text-[#524A4A] ">
-                    <ul className="list-disc list-inside text-base">
+                <CardContent className=" mt-8">
+                  <Lightbulb className="w-16 h-16 text-[#39506D] " />
+                  <CardTitle className="text-xl font-medium text-[#39506D] my-2">
+                    Simple
+                  </CardTitle>
+                  <CardDescription className="  text-[#524A4A]  ">
+                    <ul className="list-disc list-inside text-sm">
                       <li>Lenguaje 100% legible (inglés).</li>
                       <li>Sin conocimientos de desarrollo.</li>
                       <li>Tareas ejecutadas en orden.</li>
@@ -112,15 +109,13 @@ export default function Automatizacion() {
               </Card>
 
               <Card className="rounded-2xl border shadow-sm">
-                <CardContent className="p-6">
-                  <CardHeader>
-                    <RefreshCcw className="w-10 h-10 text-[#39506D]" />
-                    <CardTitle className="text-3xl font-medium text-[#39506D] mb-2">
-                      Poderoso
-                    </CardTitle>
-                  </CardHeader>
-                  <CardDescription className="font-medium text-[#524A4A]">
-                    <ul className="list-disc list-inside text-base">
+                <CardContent className=" mt-8">
+                  <RefreshCcw className="w-16 h-16 text-[#39506D]" />
+                  <CardTitle className="text-xl font-medium text-[#39506D] my-2">
+                    Poderoso
+                  </CardTitle>
+                  <CardDescription className="   text-[#524A4A]">
+                    <ul className="list-disc list-inside text-sm">
                       <li>Despliegue de aplicaciones.</li>
                       <li>Manejo de configuración.</li>
                       <li>Orquestación (Workflows).</li>
@@ -132,15 +127,13 @@ export default function Automatizacion() {
               </Card>
 
               <Card className="rounded-2xl border shadow-sm">
-                <CardContent className="p-6">
-                  <CardHeader>
-                    <Lock className="w-10 h-10 text-[#39506D]" />
-                    <CardTitle className="text-3xl font-medium text-[#39506D] mb-2">
-                      Sin agentes
-                    </CardTitle>
-                  </CardHeader>
-                  <CardDescription className="font-medium ">
-                    <ul className="list-disc list-inside text-base text-[#524A4A]">
+                <CardContent className=" mt-8 ">
+                  <Lock className="w-16 h-16 text-[#39506D]" />
+                  <CardTitle className="text-xl font-medium text-[#39506D] my-2">
+                    Sin agentes
+                  </CardTitle>
+                  <CardDescription className="  ">
+                    <ul className="list-disc list-inside text-sm text-[#524A4A]">
                       <li>No necesita agentes.</li>
                       <li>Usa OpenSSH & WinRM.</li>
                       <li>No intrusivo.</li>
@@ -154,8 +147,8 @@ export default function Automatizacion() {
           </div>
 
           {/* CTA final */}
-          <div className="text-start md:text-center max-w-5xl mx-auto">
-            <h3 className="text-start md:text-center text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
+          <div className="text-start md:text-center max-w-7xl mx-auto">
+            <h3 className="text-start md:text-center text-3xl font-semibold  text-[#39506D] mb-8">
               Con nuestros servicios de implementación de Ansible, tu
               organización incorporará soluciones eficientes y totalmente
               automatizadas que impulsarán la productividad y optimizarán tus
@@ -253,8 +246,8 @@ export default function Automatizacion() {
                 <Image
                   src="/automatizacion/ansibleawx.png"
                   alt="Ansible AWX"
-                  width={75}
-                  height={75}
+                  width={60}
+                  height={60}
                 />
                 <h3 className="text-3xl font-medium text-[#6AA2CC] ">
                   Ansible AWX
@@ -338,7 +331,7 @@ export default function Automatizacion() {
             tu infraestructura.
           </h3>
           <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">
-            Coordinar demo
+            Coordinar reunión
           </Button>
         </div>
       </div>

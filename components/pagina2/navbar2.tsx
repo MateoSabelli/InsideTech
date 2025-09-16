@@ -1,10 +1,11 @@
 'use client';
 import React, { useState } from 'react';
-import { Mail, Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { RiWhatsappFill } from 'react-icons/ri';
+import { TbMailFilled } from 'react-icons/tb';
 
 export default function Navbar2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,26 +18,29 @@ export default function Navbar2() {
       href: '/servicios',
       dropdown: [
         { name: 'Automatización', href: '/automatizacion' },
-        { name: 'Consultoría Cloud', href: '/consultoria' },
+        { name: 'Observabilidad', href: '/observabilidad' },
         { name: 'DevOps', href: '/devops' },
         { name: 'ITSM', href: '/itsm' },
-        { name: 'Observabilidad', href: '/observabilidad' },
+        { name: 'Cloud', href: '/cloud' },
+        { name: 'Consultoria', href: '/consultoria' },
         { name: 'Staffing', href: '/staffing' },
+        { name: 'Soporte', href: '/soporte' },
       ],
     },
     {
       name: 'Productos',
       href: '/productos',
       dropdown: [
-        { name: 'Grafana', href: '/grafana' },
-        { name: 'Zabbix', href: '/zabbix' },
+        { name: 'InvGate SM', href: '/invgateServiceDesk' },
+        { name: 'InvGate AM', href: '/invgateAssets' },
         { name: 'Red Hat', href: '/redhat' },
-        { name: 'InvGate Assets', href: '/invgateAssets' },
-        { name: 'InvGate Service Desk', href: '/invgateServiceDesk' },
+        { name: 'Zabbix', href: '/zabbix' },
+        { name: 'Grafana', href: '/grafana' },
       ],
     },
     { name: 'Eventos', href: '/eventos' },
     { name: 'Clientes', href: '/clientes' },
+    { name: 'Contacto', href: '/contacto' },
   ];
 
   return (
@@ -87,16 +91,16 @@ export default function Navbar2() {
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-2 text-sm">
               <Link href="mailto:info@insidetech.com.ar" target="_blank">
-                <Mail className="w-5 h-5 text-[#2d2d2d]" />
+                <TbMailFilled className="w-7 h-7 text-[#2F2D63]" />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/inside-tech"
                 target="_blank"
               >
-                <FaLinkedinIn className="w-5 h-5 text-[#2d2d2d]" />
+                <FaLinkedinIn className="w-7 h-7 text-[#2F2D63]" />
               </Link>
               <Link href="https://wa.me/5491168240315" target="_blank">
-                <RiWhatsappFill className="w-5 h-5 text-[#2d2d2d]" />
+                <RiWhatsappFill className="w-7 h-7 text-[#2F2D63]" />
               </Link>
             </div>
           </div>
