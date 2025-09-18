@@ -9,7 +9,7 @@ export default function ITSM() {
     <div className="">
       <HeroServices
         title="ITSM"
-        description="Gestión inteligente de servicios de TI para una operación más ágil, eficiente y segura."
+        description="Gestión inteligente que potencia tu operación de TI"
       />
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
@@ -36,10 +36,11 @@ export default function ITSM() {
                     <div>
                       <p className="text-gray-600 text-sm">
                         <span className="text-[#6AA2CC] text-base font-semibold">
-                          Mesa de servicio y soporte:{' '}
-                        </span>
+                          Mesa de servicio y soporte
+                        </span>{' '}
+                        <br />
                         Gestión centralizada de incidentes, solicitudes y
-                        problemas, con tiempos de respuesta óptimos.
+                        problemas, con tiempos de respuesta óptimos
                       </p>
                     </div>
                   </div>
@@ -48,10 +49,11 @@ export default function ITSM() {
                     <div>
                       <p className="text-gray-700 text-sm">
                         <span className="text-[#6AA2CC] text-base font-semibold">
-                          Gestión de activos y configuración (CMDB):{' '}
-                        </span>
+                          Gestión de activos y configuración (CMDB)
+                        </span>{' '}
+                        <br />
                         Inventario actualizado y relaciones entre componentes
-                        para un control preciso de la infraestructura.
+                        para un control preciso de la infraestructura
                       </p>
                     </div>
                   </div>
@@ -60,10 +62,11 @@ export default function ITSM() {
                     <div>
                       <p className="text-gray-700 text-sm">
                         <span className="text-[#6AA2CC] text-base font-semibold">
-                          Gestión de cambios y versiones:{' '}
-                        </span>
+                          Gestión de cambios y versiones
+                        </span>{' '}
+                        <br />
                         Implementa mejoras de forma controlada, reduciendo
-                        riesgos y asegurando continuidad.
+                        riesgos y asegurando continuidad
                       </p>
                     </div>
                   </div>
@@ -72,10 +75,11 @@ export default function ITSM() {
                     <div>
                       <p className="text-gray-700 text-sm ">
                         <span className="text-[#6AA2CC] text-base font-semibold">
-                          Automatización de flujos:{' '}
-                        </span>
+                          Automatización de flujos
+                        </span>{' '}
+                        <br />
                         Procesos predefinados que agilizan aprobaciones,
-                        asignaciones y seguimiento.
+                        asignaciones y seguimiento
                       </p>
                     </div>
                   </div>
@@ -84,10 +88,11 @@ export default function ITSM() {
                     <div>
                       <p className="text-gray-700 text-sm ">
                         <span className="text-[#6AA2CC] text-base font-semibold">
-                          Reportes y analítica:{' '}
-                        </span>
+                          Reportes y analítica
+                        </span>{' '}
+                        <br />
                         Indicadores clave (KPIs) para tomar decisiones y mejora
-                        continua.
+                        continua
                       </p>
                     </div>
                   </div>
@@ -107,19 +112,21 @@ export default function ITSM() {
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-600 text-sm">
                     <span className="text-[#6AA2CC] text-base font-semibold">
-                      Eficiencia operativa:{' '}
-                    </span>
+                      Eficiencia operativa
+                    </span>{' '}
+                    <br />
                     Reduce tiempos de resolución y mejora la productividad de tu
-                    equipo.
+                    equipo
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-600 text-sm">
                     <span className="text-[#6AA2CC] text-base font-semibold">
-                      Automatización inteligente:{' '}
-                    </span>
-                    Minimiza tareas repetitivas y errores humanos.
+                      Automatización inteligente
+                    </span>{' '}
+                    <br />
+                    Minimiza tareas repetitivas y errores humanos
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -127,9 +134,10 @@ export default function ITSM() {
                   <div>
                     <p className="text-gray-600 text-sm">
                       <span className="text-[#6AA2CC] text-base font-semibold">
-                        Visibilidad total:
-                      </span>
-                      Control centralizado de todos los servicios y activos.
+                        Visibilidad total
+                      </span>{' '}
+                      <br />
+                      Control centralizado de todos los servicios y activos
                     </p>
                   </div>
                 </div>
@@ -138,9 +146,10 @@ export default function ITSM() {
                   <div>
                     <p className="text-gray-600 text-sm">
                       <span className="text-[#6AA2CC] text-base font-semibold">
-                        Mejor experiencia de usuario:
-                      </span>
-                      Atención rápida, eficaz y personalizada.
+                        Mejor experiencia de usuario
+                      </span>{' '}
+                      <br />
+                      Atención rápida, eficaz y personalizada
                     </p>
                   </div>
                 </div>
@@ -149,10 +158,11 @@ export default function ITSM() {
                   <div>
                     <p className="text-gray-600 text-sm">
                       <span className="text-[#6AA2CC] text-base font-semibold">
-                        Escalabilidad:
-                      </span>
+                        Escalabilidad
+                      </span>{' '}
+                      <br />
                       Crece y adapta tus servicios a medida que evoluciona tu
-                      negocio.
+                      negocio
                     </p>
                   </div>
                 </div>
@@ -163,16 +173,18 @@ export default function ITSM() {
           {/* CTA final */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-12 max-w-5xl mx-auto mt-12">
             <Link
-              href="/zabbix"
+              href="/invgatesm"
               className="flex items-center gap-3 bg-white  rounded-lg px-6 py-4  hover:shadow-md hover:border-2 hover:border-gray-200  transition-shadow cursor-pointer group"
             >
               <div>
                 <p className="text-[#39506D] font-semibold text-3xl">
                   Saber más
                 </p>
-                <p className="text-[#39506D] font-semibold text-2xl">Zabbix</p>
+                <p className="text-[#39506D] font-semibold text-2xl">
+                  Invgate SM
+                </p>
               </div>
-              <div className="text-[#39506D] group-hover:translate-x-1 transition-transform">
+              <div className="text-[#39506D] ">
                 <svg
                   width="24"
                   height="24"
@@ -192,16 +204,18 @@ export default function ITSM() {
             </Link>
 
             <Link
-              href="/grafana"
-              className="flex items-center gap-3 hover:shadow-lg hover:border-2 hover:border-gray-200 rounded-lg px-6 py-4 cursor-pointer group"
+              href="/invgateAM"
+              className="flex items-center gap-3 hover:shadow-lg hover:border-2 hover:border-gray-200 rounded-lg px-6 py-4 cursor-pointer "
             >
               <div>
                 <p className="text-[#39506D] font-semibold text-3xl">
                   Saber más
                 </p>
-                <p className="text-[#39506D] font-semibold text-2xl">Grafana</p>
+                <p className="text-[#39506D] font-semibold text-2xl">
+                  Invgate AM
+                </p>
               </div>
-              <div className="text-[#39506D] group-hover:translate-x-1 transition-transform">
+              <div className="text-[#39506D] ">
                 <svg
                   width="24"
                   height="24"
@@ -222,7 +236,7 @@ export default function ITSM() {
           </div>
           <div className=" text-center max-w-7xl mx-auto pt-4 md:pt-28">
             <h3 className="text-3xl font-semibold max-w-7xl mx-auto text-[#39506D] mb-8">
-              Contactanos para una demo personalizada y descubrí cómo ITSM puede
+              Contáctanos para una demo personalizada y descubrí cómo ITSM puede
               transformar la gestión de servicios de tu organización
             </h3>
             <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">

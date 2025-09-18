@@ -72,15 +72,16 @@ export const Services = () => {
           transition={{ duration: 0.5 }}
           className="text-center "
         >
-          <h1 className="text-4xl md:text-5xl max-w-4xl mx-auto font-bold mb-8 text-gray-900  rounded-full p-3 text-center duration-300 ">
+          <h2 className="text-3xl text-center max-w-7xl mx-auto font-semibold text-[#39506D] mb-12">
             Nuestros servicios
-          </h1>
+          </h2>
         </motion.div>
 
         <p className="text-gray-600  leading-relaxed max-w-4xl mx-auto text-center mb-16">
-          Desarrollamos nuestras líneas de productos y servicios con un enfoque
-          innovador, participando activamente en cada proyecto y aportando valor
-          de forma constante.
+          Desarrollamos nuestras líneas de productos y servicios con un{' '}
+          <span className="font-bold text-[#39506D] ">enfoque innovador </span>,
+          participando activamente en cada proyecto y aportando valor de forma
+          constante.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -95,17 +96,13 @@ export const Services = () => {
             >
               <Link href={service.link} id={service.id}>
                 <div className="group relative border bg-white border-gray-100 hover:border-gray-300 rounded-xl p-8 h-full transition-all duration-300 shadow-sm hover:shadow-md">
-                  <div className="relative  flex flex-row gap-4 justify-start">
-                    <div
-                      className={`w-6 h-6 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
-                    >
-                      <service.icon className="w-6 h-6 text-blue-500" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-700 transition-colors duration-300">
+                  <div className="relative  flex flex-col gap-4 justify-center items-center">
+                    <service.icon className="w-16 h-16 text-[#6AA2CC]" />
+                    <h3 className="text-xl font-bold text-[#6AA2CC] mb-3">
                       {service.title}
                     </h3>
                   </div>
-                  <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+                  <p className="text-gray-600 mb-6 leading-relaxed text-base text-center">
                     {service.description}
                   </p>
                 </div>

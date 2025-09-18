@@ -2,6 +2,7 @@ import HeroServices from '@/components/pagina2/Hero-Services';
 import React from 'react';
 import Image from 'next/image';
 import { Box, CircleCheck } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function Staffing() {
   return (
@@ -29,33 +30,33 @@ export default function Staffing() {
               <div className="flex items-start gap-3">
                 <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                 <p className="text-gray-700 text-base">
-                  Analistas Técnicos y Funcionales.
+                  Analistas Técnicos y Funcionales
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
-                <p className="text-gray-700 text-base">Líderes de Proyecto.</p>
+                <p className="text-gray-700 text-base">Líderes de Proyecto</p>
               </div>
               <div className="flex items-start gap-3">
                 <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
-                <p className="text-gray-700 text-base">Consultores.</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
-                <p className="text-gray-700 text-base">
-                  Administradores de Bases de Datos.
-                </p>
+                <p className="text-gray-700 text-base">Consultores</p>
               </div>
               <div className="flex items-start gap-3">
                 <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                 <p className="text-gray-700 text-base">
-                  Administrador de Infraestructura.
+                  Administradores de Bases de Datos
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                 <p className="text-gray-700 text-base">
-                  Perfiles específicos requeridos por el cliente.
+                  Administrador de Infraestructura
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
+                <p className="text-gray-700 text-base">
+                  Perfiles específicos requeridos por el cliente
                 </p>
               </div>
             </div>
@@ -75,14 +76,14 @@ export default function Staffing() {
           <h3 className="text-3xl font-medium text-[#6AA2CC] mb-8">
             ¿Como es nuestro proceso?
           </h3>
-          <div className="relative">
+          <div className="relative mb-12 ml-12">
             {/* Línea vertical */}
             <div className="absolute left-4 h-full w-0.5 bg-[#6AA2CC]"></div>
 
             {/* Elementos del timeline */}
             <div className="space-y-12 ml-12">
               {/* Elemento 1 */}
-              <div className="relative">
+              <div className="relative space-x-4">
                 <div className="absolute -left-12 -mt-1">
                   <div className="w-8 h-8 bg-[#6AA2CC] rounded-full flex items-center justify-center text-white font-bold">
                     1
@@ -92,7 +93,7 @@ export default function Staffing() {
                   <p className="text-[#6AA2CC] font-semibold">
                     Relevamiento del puesto
                   </p>
-                  <p className="text-gray-700 text-base max-w-xs">
+                  <p className="text-gray-700 text-base max-w-md text-justify">
                     Una vez recibida tu solicitud, nuestro Departamento se pone
                     en contacto con el responsable de la búsqueda en tu empresa
                     para hacer un relevamiento del perfil del puesto.
@@ -101,9 +102,9 @@ export default function Staffing() {
               </div>
 
               {/* Elemento 2 */}
-              <div className="relative">
-                <div className="absolute -left-12 -mt-1">
-                  <div className="w-8 h-8 bg-[#6AA2CC] rounded-full flex items-center justify-center text-white font-bold">
+              <div className="relative space-x-4">
+                <div className="absolute -left-[51px] -mt-1">
+                  <div className="w-10 h-10 bg-[#6AA2CC] rounded-full flex items-center justify-center text-white font-bold">
                     2
                   </div>
                 </div>
@@ -111,7 +112,7 @@ export default function Staffing() {
                   <p className="text-[#6AA2CC] font-semibold">
                     Reclutamiento, Selección y Presentación
                   </p>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base max-w-md text-justify">
                     Contamos con acceso a bases de datos, redes sociales,
                     convenio con universidades, etc. Realizamos las primeras
                     entrevistas a los candidatos preseleccionados y coordinamos
@@ -122,15 +123,15 @@ export default function Staffing() {
               </div>
 
               {/* Elemento 3 */}
-              <div className="relative">
-                <div className="absolute -left-12 -mt-1">
-                  <div className="w-8 h-8 bg-[#6AA2CC] rounded-full flex items-center justify-center text-white font-bold">
+              <div className="relative space-x-4">
+                <div className="absolute -left-[55px] -mt-2">
+                  <div className="w-12 h-12 bg-[#6AA2CC] rounded-full flex items-center justify-center text-white font-bold">
                     3
                   </div>
                 </div>
                 <div className="space-y-3">
                   <p className="text-[#6AA2CC] font-semibold">Incorporación</p>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base max-w-md text-justify">
                     En base al resultado de las entrevistas realizadas por tu
                     empresa, comunicamos el resultado a los candidatos y
                     ejecutamos la incorporación del recurso seleccionado previo
@@ -138,11 +139,11 @@ export default function Staffing() {
                     las modalidades:
                   </p>
 
-                  <div className="space-y-2">
+                  <div className="space-y-2 max-w-md text-justify">
                     <div className="flex items-start gap-3">
                       <Box className="w-5 h-5 text-[#EBBA55] mt-1 flex-shrink-0" />
                       <p className="text-gray-700 text-base">
-                        Incorporando al candidato como empleado en tu empresa.
+                        Incorporando al candidato como empleado en tu empresa
                       </p>
                     </div>
 
@@ -151,21 +152,23 @@ export default function Staffing() {
                       <Box className="w-5 h-5 text-[#EBBA55] mt-1 flex-shrink-0" />
                       <p className="text-gray-700 text-base">
                         Prestando servicios profesionales como empleado de
-                        InsideTech (*).
+                        InsideTech
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                (*) Seguimiento del Servicio: Contamos con Coordinadores de
-                Servicio que supervisan el desempeño de los recursos, el
-                cumplimiento de asistencia, tiempos y entregables, mediante
-                visitas en las oficinas del cliente y reuniones de seguimiento
-                conjuntas.
-              </p>
             </div>
           </div>
+        </div>
+        <div className=" text-center max-w-5xl mx-auto pt-16">
+          <h3 className="text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
+            Contáctanos y descubrí cómo nuestro servicio de Staffing permite a
+            tu organización ser mas eficiente
+          </h3>
+          <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">
+            Solicitar reunión
+          </Button>
         </div>
       </div>
     </div>

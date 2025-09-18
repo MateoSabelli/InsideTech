@@ -43,7 +43,7 @@ export default function Observabilidad() {
     <div className="">
       <HeroServices
         title="Observabilidad"
-        description="Detecte y resuelva incidencias de forma proactiva, reduciendo riesgos y asegurando una experiencia óptima para sus clientes."
+        description="Detecta y resolve incidencias proactivamente"
       />
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
@@ -80,51 +80,49 @@ export default function Observabilidad() {
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Monitoreo unificado de infraestructura.
+                      Monitoreo unificado de infraestructura
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Analisis de trafico y rendimiento de red.
+                      Análisis de tráfico y rendimiento de red
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Optimizacion de procesos.
+                      Optimización de procesos
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
-                    <p className="text-gray-700 text-base">Soporte continuo.</p>
+                    <p className="text-gray-700 text-base">Soporte continuo</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Gestion de rendimientos.
+                      Gestión de rendimientos
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
-                    <p className="text-gray-700 text-base">
-                      Mapa de servicios.
-                    </p>
+                    <p className="text-gray-700 text-base">Mapa de servicios</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
-                    <p className="text-gray-700 text-base">Gestion de KPIs.</p>
+                    <p className="text-gray-700 text-base">Gestión de KPIs</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Integracion nativa.
+                      Integración nativa
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Gestion de logs centralizados.
+                      Gestión de logs centralizados
                     </p>
                   </div>
                 </div>
@@ -151,48 +149,46 @@ export default function Observabilidad() {
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
-                    Mejor comprensión del rendimiento de la infraestructura.
+                    Mejor comprensión del rendimiento de la infraestructura
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
-                    Resolución de problemas más rápida.
+                    Resolución de problemas más rápido
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
+                  <p className="text-gray-700 text-base">Mayor escalabilidad</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
+                  <p className="text-gray-700 text-base">
+                    Reducción de tiempos de inactividad
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
-                    Mayor escalabilidad.
+                    Optimización de Recursos
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
-                    Reducción de tiempos de inactividad.
+                    Mayor Eficiencia Operativa
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
-                    Optimización de Recursos.
+                    Toma de Decisiones Informada
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
-                  <p className="text-gray-700 text-base">
-                    Mayor Eficiencia Operativa.
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
-                  <p className="text-gray-700 text-base">
-                    Toma de Decisiones Informada.
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
-                  <p className="text-gray-700 text-base">Mejora Continua.</p>
+                  <p className="text-gray-700 text-base">Mejora Continua</p>
                 </div>
               </div>
             </div>
@@ -202,11 +198,11 @@ export default function Observabilidad() {
           <div className="mt-24">
             <div className="text-center ">
               <p className="text-3xl font-semibold text-[#39506D] max-w-7xl mx-auto">
-                ¿Como lo hacemos?
+                ¿Cómo lo hacemos?
               </p>
               <p className="text-lg text-gray-700 max-w-7xl mx-auto mt-4">
                 Implementamos herramientas open source consolidadas como
-                estándar en los departamentos de TI de organizaciones líderes.
+                estándares en los departamentos de TI de organizaciones líderes.
               </p>
             </div>
 
@@ -233,7 +229,7 @@ export default function Observabilidad() {
             <p className="text-lg text-gray-700 max-w-7xl mx-auto mt-4">
               Zabbix y Grafana se posicionan entre las herramientas de
               observabilidad más reconocidas en el sector. Ofrecen capacidades
-              avanzadas para el monitoreo, análisis y visualización de datos en
+              avanzadas para monitoreo, análisis y visualización de datos en
               tiempo real, mejorando la gestión y el rendimiento de la
               infraestructura IT.
             </p>

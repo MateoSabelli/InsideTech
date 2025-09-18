@@ -14,7 +14,7 @@ export default function DevOps() {
       <div className="max-w-3xl md:max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl max-w-6xl mx-auto font-semibold text-[#39506D] mb-12">
-            Automatizá, integrá y optimizá tu ciclo de vida de software con
+            Integrá, automatizá y optimizá tu ciclo de vida de software con
             soluciones adaptadas a tu organización
           </h2>
         </div>
@@ -48,13 +48,13 @@ export default function DevOps() {
                   ¿Por qué es tan importante implementarlo en tu empresa?
                 </h4>
                 <div className="space-y-4">
-                  <p className="text-base">
+                  <p className="text-lg">
                     La utilización de diferentes herramientas permite que los
                     flujos de trabajo de desarrollo y operaciones se vuelvan
                     tareas más optimizadas y colaborativas al automatizar tareas
                     que antes eran manuales.
                   </p>
-                  <p className="text-base ">
+                  <p className="text-lg ">
                     Uno de los beneficios más importantes que tiene DevOps es
                     lograr la satisfacción del cliente, prestar servicios en
                     menos tiempo y lograr una plataforma más estable y segura.
@@ -74,47 +74,52 @@ export default function DevOps() {
                   <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Reducción de tiempos de entrega:
+                      Reducción de tiempos de entrega
                     </span>{' '}
-                    Implementá software más rápido sin sacrificar calidad.
+                    <br />
+                    Implementá software más rápido sin sacrificar calidad
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Mayor confiabilidad:
+                      Mayor confiabilidad
                     </span>{' '}
+                    <br />
                     Automatizá pruebas, despliegues y monitoreo para minimizar
-                    errores.
+                    errores
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Escalabilidad asegurada:
+                      Escalabilidad asegurada
                     </span>{' '}
-                    Infraestructura ágil para crecer al ritmo de tu negocio.
+                    <br />
+                    Infraestructura ágil para crecer al ritmo de tu negocio
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Integración continua (CI/CD):
+                      Integración continua (CI/CD)
                     </span>{' '}
+                    <br />
                     Actualizaciones constantes con mínimo impacto en la
-                    operación.
+                    operación
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Cultura colaborativa:
+                      Cultura colaborativa
                     </span>{' '}
-                    Alineá a tus equipos hacia objetivos comunes.
+                    <br />
+                    Alineá a tus equipos hacia objetivos comunes
                   </p>
                 </div>
               </div>
@@ -133,9 +138,9 @@ export default function DevOps() {
                 </span>{' '}
                 ayudándote a detectar y corregir errores de forma más ágil,
                 elevar la calidad de tu software y acortar los tiempos de
-                validación y despliegue de nuevas actualizaciones. <br /> Para
-                lograrlo, implementamos y optimizamos el uso de herramientas
-                especializadas en integración continua.
+                validación y despliegue de nuevas actualizaciones.
+                <br /> <br /> Para lograrlo, implementamos y optimizamos el uso
+                de herramientas especializadas en integración continua.
               </p>
             </div>
             <div className="flex items-center justify-center ">
@@ -150,9 +155,10 @@ export default function DevOps() {
           </div>
         </div>
         <div className=" my-12">
-          <h4 className="text-3xl font-medium text-[#6AA2CC] ">
-            Despliegue Continuo
-          </h4>
+          {/* <div className="grid lg:grid-cols-2 gap-12 items-center justify-center mb-6">
+            <span></span>
+            
+          </div> */}
           <div className="grid lg:grid-cols-2 gap-12 items-center justify-center">
             <div className="flex items-center justify-center ">
               <Image
@@ -164,13 +170,16 @@ export default function DevOps() {
               />
             </div>
             <div>
+              <h4 className="text-3xl font-medium text-[#6AA2CC] mb-6">
+                Despliegue Continuo
+              </h4>
               <p className="text-lg ">
                 <span className="font-bold text-[#39506D]">
                   Acelera la entrega de valor
                 </span>{' '}
                 reduciendo al mínimo el tiempo entre la implementación de
-                cambios y su disponibilidad para los usuarios finales. <br />{' '}
-                Para lograrlo, trabajamos con un conjunto de herramientas
+                cambios y su disponibilidad para los usuarios finales. <br />
+                <br /> Para lograrlo, trabajamos con un conjunto de herramientas
                 especializadas que nos permiten automatizar, optimizar y
                 garantizar despliegues confiables.
               </p>
@@ -180,7 +189,7 @@ export default function DevOps() {
 
         <div className=" text-center max-w-5xl mx-auto pt-12">
           <h3 className="text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
-            Contactanos y descubí cómo con DevOps podés acelerar tu desarrollo y
+            Contáctanos y descubrí por qué DevOps puede acelerar tu desarrollo y
             optimizar tu operación de TI
           </h3>
           <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">

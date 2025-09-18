@@ -9,7 +9,7 @@ export default function Cloud() {
     <div className="">
       <HeroServices
         title="Cloud"
-        description="Potencia, Flexibilidad y Escalabilidad en la Nube"
+        description="Capacidad, Flexibilidad y Escalabilidad en la Nube"
       />
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
@@ -240,7 +240,7 @@ export default function Cloud() {
           {/* CTA final */}
           <div className=" text-center max-w-5xl mx-auto">
             <h3 className="text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
-              Contactanos y descubrí cómo AWS puede transformar la gestión de tu
+              Contáctanos y descubrí cómo AWS puede transformar la gestión de tu
               infraestructura
             </h3>
             <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">

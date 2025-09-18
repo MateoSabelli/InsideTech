@@ -57,37 +57,41 @@ export default function Grafana() {
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Código Abierto y Comunidad Activa:
+                        Código Abierto y Comunidad Activa
                       </span>{' '}
-                      Evoluciona constantemente con nuevas funciones.
+                      <br />
+                      Evoluciona constantemente con nuevas funciones
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Ahorro de Costos:
+                        Ahorro de Costos
                       </span>{' '}
-                      Evita licencias costosas de software propietario.
+                      <br />
+                      Evita licencias costosas de software propietario
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Ecosistema Completo:
+                        Ecosistema Completo
                       </span>{' '}
+                      <br />
                       Compatible con Grafana Cloud y Grafana Enterprise para
-                      funcionalidades avanzadas.
+                      funcionalidades avanzadas
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Confiabilidad y Rendimiento:
+                        Confiabilidad y Rendimiento
                       </span>{' '}
-                      Adoptado por miles de organizaciones líderes en el mundo.
+                      <br />
+                      Adoptado por miles de organizaciones líderes en el mundo
                     </p>
                   </div>
                 </div>
@@ -105,40 +109,44 @@ export default function Grafana() {
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Visibilidad Total:
+                        Visibilidad Total
                       </span>{' '}
+                      <br />
                       Conecta y centraliza datos de distintas fuentes para una
-                      visión integral en tiempo real.
+                      visión integral en tiempo real
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Decisiones Rápidas:
+                        Decisiones Rápidas
                       </span>{' '}
+                      <br />
                       Detecta patrones, anomalías y oportunidades con gráficos
-                      dinámicos y alertas personalizadas.
+                      dinámicos y alertas personalizadas
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Flexibilidad y Escalabilidad:
+                        Flexibilidad y Escalabilidad
                       </span>{' '}
+                      <br />
                       Se adapta a todo tipo de entornos, desde pequeñas empresas
-                      hasta infraestructuras globales.
+                      hasta infraestructuras globales
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Interfaz Intuitiva:
+                        Interfaz Intuitiva
                       </span>{' '}
+                      <br />
                       Diseñada para que cualquier usuario pueda crear y
-                      personalizar dashboards sin conocimientos avanzados.
+                      personalizar dashboards sin conocimientos avanzados
                     </p>
                   </div>
                 </div>
@@ -153,40 +161,44 @@ export default function Grafana() {
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Integraciones Amplias:
+                      Integraciones Amplias
                     </span>{' '}
+                    <br />
                     Compatible con más de 100 fuentes de datos (Prometheus,
                     InfluxDB, Elasticsearch, MySQL, Zabbix, AWS, Azure, entre
-                    otras).
+                    otras)
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium  text-[#6AA2CC]">
-                      Alertas Inteligentes:
+                      Alertas Inteligentes
                     </span>{' '}
+                    <br />
                     Configuración de umbrales y notificaciones por email, Slack,
-                    Teams o canales personalizados.
+                    Teams o canales personalizados
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Dashboards Interactivos:
+                      Dashboards Interactivos
                     </span>{' '}
+                    <br />
                     Visualizaciones adaptadas a KPIs, métricas técnicas o
-                    indicadores de negocio.
+                    indicadores de negocio
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Soporte para Logs y Trazas:
+                      Soporte para Logs y Trazas
                     </span>{' '}
-                    Exploración rápida de eventos y correlación con métricas.
+                    <br />
+                    Exploración rápida de eventos y correlación con métricas
                   </p>
                 </div>
               </div>
@@ -228,7 +240,7 @@ export default function Grafana() {
           {/* CTA final */}
           <div className=" text-center max-w-5xl mx-auto">
             <h3 className="text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
-              Contactanos para implementar Grafana de forma rápida, segura y
+              Contáctanos para implementar Grafana de forma rápida, segura y
               adaptada a las necesidades de tu organización
             </h3>
             <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">

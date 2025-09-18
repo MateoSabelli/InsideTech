@@ -73,43 +73,43 @@ export default function Redhat() {
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Soporte empresarial de primer nivel.
+                      Soporte empresarial de primer nivel
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Estabilidad y confiabilidad.
+                      Estabilidad y confiabilidad
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Seguridad reforzada.
+                      Seguridad reforzada
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Escalabilidad y alto rendimiento.
+                      Escalabilidad y alto rendimiento
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Compatibilidad certificada.
+                      Compatibilidad certificada
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Automatización y eficiencia operativa.
+                      Automatización y eficiencia operativa
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
                     <p className="text-gray-700 text-base">
-                      Flexibilidad en entornos híbridos y multinube.
+                      Flexibilidad en entornos híbridos y multinube
                     </p>
                   </div>
                 </div>
@@ -126,15 +126,18 @@ export default function Redhat() {
                   Sistemas Operativos Empresariales
                 </h3>
                 <p className="text-gray-700 text-base mb-4  leading-relaxed ">
-                  Red Hat Enterprise Linux (RHEL) es el sistema operativo líder
-                  de Red Hat, diseñado para ofrecer una base sólida, estable y
-                  segura para aplicaciones empresariales. Reconocido por su
-                  fiabilidad, alto rendimiento y avanzadas capacidades de
-                  seguridad, RHEL es la elección preferida en entornos
-                  corporativos críticos.
+                  <span className="font-bold text-[#39506D]">
+                    Red Hat Enterprise Linux (RHEL){' '}
+                  </span>{' '}
+                  es el sistema operativo líder de Red Hat, diseñado para
+                  ofrecer una base sólida, estable y segura para aplicaciones
+                  empresariales. Reconocido por su fiabilidad, alto rendimiento
+                  y avanzadas capacidades de seguridad, RHEL es la elección
+                  preferida en entornos corporativos críticos.
                 </p>
                 <p className="text-gray-700 text-base leading-relaxed ">
-                  RHEL proporciona una plataforma para desplegar aplicaciones en
+                  <span className="font-bold text-[#39506D]"> RHEL </span>{' '}
+                  proporciona una plataforma para desplegar aplicaciones en
                   servidores físicos, máquinas virtuales y entornos de
                   contenedores. Ofrece funciones avanzadas de seguridad,
                   herramientas de gestión de sistemas y soporte empresarial de
@@ -175,8 +178,9 @@ export default function Redhat() {
                   eficiente.
                 </p>
                 <p className="text-gray-700 text-base ">
-                  OpenShift ofrece una plataforma integral para la orquestación
-                  de contenedores, incorporando capacidades de automatización,
+                  <span className="font-bold text-[#39506D]"> OpenShift </span>{' '}
+                  ofrece una plataforma integral para la orquestación de
+                  contenedores, incorporando capacidades de automatización,
                   gestión de clústeres y seguridad avanzada. Ayuda a las
                   organizaciones a modernizar sus aplicaciones y adoptar
                   metodologías de desarrollo ágiles.
@@ -191,17 +195,20 @@ export default function Redhat() {
                   Automatización y Gestión
                 </h3>
                 <p className="text-gray-700 text-base mb-4">
-                  Red Hat brinda a las organizaciones la capacidad de
+                  <span className="font-bold text-[#39506D]">Red Hat </span>{' '}
+                  brinda a las organizaciones la capacidad de automatizar tareas
+                  de TI en toda su infraestructura, abarcando desde la
+                  configuración de sistemas hasta el despliegue de aplicaciones.
                   automatizar tareas de TI en toda su infraestructura, abarcando
                   desde la configuración de sistemas hasta el despliegue de
                   aplicaciones.
                 </p>
                 <p className="text-gray-700 text-base ">
-                  Ansible ofrece una plataforma de automatización de TI que
-                  integra orquestación de flujos de trabajo, gestión de
-                  inventarios y ejecución de tareas. Ayuda a las organizaciones
-                  a optimizar la eficiencia operativa y minimizar los errores
-                  humanos.
+                  <span className="font-bold text-[#39506D]"> Ansible </span>{' '}
+                  ofrece una plataforma de automatización de TI que integra
+                  orquestación de flujos de trabajo, gestión de inventarios y
+                  ejecución de tareas. Ayuda a las organizaciones a optimizar la
+                  eficiencia operativa y minimizar los errores humanos.
                 </p>
               </div>
               <div className="flex items-center justify-center gap-6 mb-6">
@@ -219,7 +226,7 @@ export default function Redhat() {
           {/* CTA final */}
           <div className=" text-center max-w-5xl mx-auto pt-4 md:pt-28">
             <h3 className="text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
-              Contactanos para una demo personalizada y descubrí cómo Red Hat
+              Contáctanos para una demo personalizada y descubrí cómo Red Hat
               puede transformar la gestión de tu infraestructura.
             </h3>
             <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">

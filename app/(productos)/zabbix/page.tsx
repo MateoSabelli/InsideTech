@@ -11,8 +11,8 @@ export default function Zabbix() {
         title="Zabbix"
         description="Supervisión inteligente para tu infraestructura IT"
       />
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
+      <div className="py-16">
+        <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl max-w-2xl mx-auto font-semibold text-[#39506D] mb-12">
             Monitoreo en tiempo real para un negocio más ágil, seguro y
             eficiente
@@ -39,7 +39,7 @@ export default function Zabbix() {
               </div>
 
               {/* Principales beneficios */}
-              <div className="mt-8">
+              <div className="mt-16">
                 <h4 className="text-3xl font-medium text-[#6AA2CC] mb-4">
                   Principales beneficios
                 </h4>
@@ -48,45 +48,49 @@ export default function Zabbix() {
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Monitoreo Integral:
+                        Monitoreo Integral
                       </span>{' '}
-                      supervisión completa desde hardware físico y redes hasta
-                      entornos virtualizados y servicios cloud.
+                      <br />
+                      Supervisión completa desde hardware físico y redes hasta
+                      entornos virtualizados y servicios cloud
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Alertas Inteligentes:
+                        Alertas Inteligentes
                       </span>{' '}
-                      sistema de notificaciones automáticas configurables que
-                      garantizan respuesta inmediata ante incidencias críticas.
+                      <br />
+                      Sistema de notificaciones automáticas configurables que
+                      garantizan respuesta inmediata ante incidencias críticas
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Escalabilidad Empresarial:
+                        Escalabilidad Empresarial
                       </span>{' '}
-                      arquitectura flexible que se adapta desde pequeñas
-                      empresas hasta grandes corporaciones multinacionales.
+                      <br />
+                      Arquitectura flexible que se adapta desde pequeñas
+                      empresas hasta grandes corporaciones multinacionales
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CircleCheck className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 text-base">
                       <span className="font-medium text-[#6AA2CC]">
-                        Open Source Premium:
+                        Open Source Premium
                       </span>{' '}
-                      plataforma sin costos de licenciamiento con dashboards
-                      personalizables para cada necesidad de negocio.
+                      <br />
+                      Plataforma sin costos de licenciamiento con dashboards
+                      personalizables para cada necesidad de negocio
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="rounded-lg p-6 min-h-[400px] flex items-start justify-center ">
+              <div className="rounded-lg mt-4 p-6 min-h-[400px] flex items-start justify-center ">
                 <Image
                   src="/zabbix/dashboard3.png"
                   alt="Dashboard de Zabbix mostrando métricas en tiempo real"
@@ -108,7 +112,7 @@ export default function Zabbix() {
                   className="rounded-lg "
                 />
               </div>
-              <div className="mt-8">
+              <div className="mt-16">
                 <h3 className="text-3xl font-medium text-[#6AA2CC] mb-4">
                   Características destacadas
                 </h3>
@@ -118,54 +122,59 @@ export default function Zabbix() {
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Visibilidad en tiempo real:
+                      Visibilidad en tiempo real
                     </span>{' '}
+                    <br />
                     Paneles dinámicos y personalizables para analizar el estado
-                    de toda la infraestructura.
+                    de toda la infraestructura
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium  text-[#6AA2CC]">
-                      Alertas multi-canal:
+                      Alertas multi-canal
                     </span>{' '}
+                    <br />
                     Envío de notificaciones vía email, SMS, mensajería
-                    instantánea y herramientas de colaboración.
+                    instantánea y herramientas de colaboración
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Integración flexible:{' '}
+                      Integración flexible
                     </span>{' '}
+                    <br />
                     Compatible con soluciones como Grafana, Ansible, VMware,
-                    AWS, Azure, entre otras.
+                    AWS, Azure, entre otras
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Análisis predictivo:
+                      Análisis predictivo
                     </span>{' '}
+                    <br />
                     Identificación de tendencias y detección temprana de
-                    problemas.
+                    problemas
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 mt-1" />
                   <p className="text-gray-700 text-base">
                     <span className="font-medium text-[#6AA2CC]">
-                      Alta seguridad:
+                      Alta seguridad
                     </span>{' '}
+                    <br />
                     Comunicación cifrada y gestión centralizada de usuarios y
-                    permisos.
+                    permisos
                   </p>
                 </div>
               </div>
-              <div className="rounded-lg p-6 min-h-[400px] flex items-center justify-center lg:hidden">
+              <div className="rounded-lg p-6 mt-2 min-h-[400px] flex items-center justify-center lg:hidden">
                 <Image
                   src="/zabbix/dashboard3.png"
                   alt="Dashboard de Zabbix mostrando métricas en tiempo real"
@@ -176,50 +185,49 @@ export default function Zabbix() {
               </div>
             </div>
           </div>
-
-          {/* Sección de beneficios finales */}
-          <div className="mt-12">
-            <div className="text-center ">
-              <p className="text-3xl font-semibold text-[#39506D] max-w-7xl mx-auto">
-                Con Zabbix, su empresa obtiene control total, reduciendo tiempos
-                de inactividad, optimizando recursos y mejorando la experiencia
-                del usuario final
-              </p>
-            </div>
-
-            {/* Mockup de dashboards */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-20 mb-4 ">
-              <div className="rounded-lg  py-8 flex items-center justify-center">
-                <Image
-                  src="/zabbix/dashboard4.png"
-                  alt="Dashboard de Zabbix mostrando métricas en tiempo real"
-                  width={500}
-                  height={300}
-                  className="rounded-lg "
-                />
-              </div>
-              <div className="rounded-lg  py-8 flex items-center justify-center">
-                <Image
-                  src="/zabbix/dashboard5.png"
-                  alt="Dashboard de Zabbix mostrando métricas en tiempo real"
-                  width={500}
-                  height={300}
-                  className="rounded-lg "
-                />
-              </div>
-            </div>
+        </div>
+        {/* Sección de beneficios finales */}
+        <div className=" space-y-16 py-8 ">
+          <div className="text-center ">
+            <p className="text-3xl font-semibold text-[#39506D] max-w-7xl mx-auto">
+              Con Zabbix, obtene control total, reduciendo tiempos de <br />
+              inactividad, optimizando recursos y mejorando la experiencia del
+              usuario final
+            </p>
           </div>
 
-          {/* CTA final */}
-          <div className=" text-center max-w-5xl mx-auto">
-            <h3 className="text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
-              Contactanos para una demo personalizada y descubrí cómo Zabbix
-              puede transformar la gestión de tu infraestructura.
-            </h3>
-            <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">
-              Solicitar demo
-            </Button>
+          {/* Mockup de dashboards */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-20 ">
+            <div className="rounded-lg py-4 flex items-center justify-center">
+              <Image
+                src="/zabbix/dashboard4.png"
+                alt="Dashboard de Zabbix mostrando métricas en tiempo real"
+                width={500}
+                height={300}
+                className="rounded-lg "
+              />
+            </div>
+            <div className="rounded-lg py-4 flex items-center justify-center">
+              <Image
+                src="/zabbix/dashboard5.png"
+                alt="Dashboard de Zabbix mostrando métricas en tiempo real"
+                width={500}
+                height={300}
+                className="rounded-lg "
+              />
+            </div>
           </div>
+        </div>
+
+        {/* CTA final */}
+        <div className=" text-center max-w-6xl mx-auto pt-8">
+          <h3 className="text-3xl font-semibold text-[#39506D] mb-8">
+            Contáctanos para implementar Zabbix y descubrí cómo puede
+            transformar la gestión de tu infraestructura tecnológica
+          </h3>
+          <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">
+            Solicitar demo
+          </Button>
         </div>
       </div>
     </div>

@@ -31,8 +31,8 @@ export default function Navbar2() {
       name: 'Productos',
       href: '/productos',
       dropdown: [
-        { name: 'InvGate SM', href: '/invgateServiceDesk' },
-        { name: 'InvGate AM', href: '/invgateAssets' },
+        { name: 'InvGate SM', href: '/invgatesm' },
+        { name: 'InvGate AM', href: '/invgateam' },
         { name: 'Red Hat', href: '/redhat' },
         { name: 'Zabbix', href: '/zabbix' },
         { name: 'Grafana', href: '/grafana' },
@@ -70,7 +70,7 @@ export default function Navbar2() {
 
                 {/* Dropdown Menu */}
                 {item.dropdown && hoveredItem === item.name && (
-                  <div className="absolute top-full left-0  w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                  <div className="absolute top-full left-0 w-max bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                     <div className="py-2">
                       {item.dropdown.map((dropdownItem) => (
                         <Link

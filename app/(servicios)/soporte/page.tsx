@@ -32,9 +32,8 @@ export default function Soporte() {
             <div className="flex items-start gap-3">
               <Box className="w-5 h-5 text-[#EBBA55] flex-shrink-0 " />
               <p className="text-gray-700 text-base">
-                Disponemos de sistemas de cobertura 5×9 y 7×24 los 365 días del
-                año vía telefónica, remota y on-site con distintos niveles de
-                SLA
+                Disponemos de sistemas de cobertura 5×9 y 7×24, vía telefónica,
+                remota y on-site con distintos niveles de SLA
               </p>
             </div>
             <div className="flex items-start gap-3">
@@ -58,7 +57,7 @@ export default function Soporte() {
         </div>
         <div className=" text-center max-w-7xl mx-auto pt-4 md:pt-12">
           <h3 className="text-3xl font-semibold text-[#39506D] mb-8">
-            Contactanos y potenciá la evolución de tus sistemas con nuestro
+            Contáctanos y potenciá la evolución de tus sistemas con nuestro
             servicio de Operación y Gestión
           </h3>
           <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">

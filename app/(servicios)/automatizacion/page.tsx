@@ -15,12 +15,12 @@ export default function Automatizacion() {
     <div>
       <HeroServices
         title="Automatización"
-        description="Automatiza y optimiza los procesos de TI para mejorar la eficiencia operativa."
+        description="Agilizá tu negocio con procesos automatizados"
       />
       <div className="max-w-7xl mx-auto px-4  py-16">
         <div className="text-start md:text-center mb-12">
           <h2 className="text-3xl max-w-4xl mx-auto font-semibold text-[#39506D] mb-12">
-            Automatizá tus operaciones de TI incrementando la eficiencia y
+            Mejorá tus operaciones de TI incrementando la eficiencia y
             reduciendo costos
           </h2>
         </div>
@@ -98,11 +98,11 @@ export default function Automatizacion() {
                   </CardTitle>
                   <CardDescription className="  text-[#524A4A]  ">
                     <ul className="list-disc list-inside text-sm">
-                      <li>Lenguaje 100% legible (inglés).</li>
-                      <li>Sin conocimientos de desarrollo.</li>
-                      <li>Tareas ejecutadas en orden.</li>
-                      <li>Reutilizable por otros equipos.</li>
-                      <li>Rápida puesta en producción.</li>
+                      <li>Lenguaje 100% legible (inglés)</li>
+                      <li>Sin conocimientos de desarrollo</li>
+                      <li>Tareas ejecutadas en orden</li>
+                      <li>Reutilizable por otros equipos</li>
+                      <li>Rápida puesta en producción</li>
                     </ul>
                   </CardDescription>
                 </CardContent>
@@ -116,11 +116,11 @@ export default function Automatizacion() {
                   </CardTitle>
                   <CardDescription className="   text-[#524A4A]">
                     <ul className="list-disc list-inside text-sm">
-                      <li>Despliegue de aplicaciones.</li>
-                      <li>Manejo de configuración.</li>
-                      <li>Orquestación (Workflows).</li>
-                      <li>Automatización de las Redes.</li>
-                      <li>Orquestación del ciclo de vida.</li>
+                      <li>Despliegue de aplicaciones</li>
+                      <li>Manejo de configuración</li>
+                      <li>Orquestación (Workflows)</li>
+                      <li>Automatización de las Redes</li>
+                      <li>Orquestación del ciclo de vida</li>
                     </ul>
                   </CardDescription>
                 </CardContent>
@@ -134,11 +134,11 @@ export default function Automatizacion() {
                   </CardTitle>
                   <CardDescription className="  ">
                     <ul className="list-disc list-inside text-sm text-[#524A4A]">
-                      <li>No necesita agentes.</li>
-                      <li>Usa OpenSSH & WinRM.</li>
-                      <li>No intrusivo.</li>
-                      <li>Comienzo inmediato.</li>
-                      <li>Más eficiente & Más seguro.</li>
+                      <li>No necesita agentes</li>
+                      <li>Usa OpenSSH & WinRM</li>
+                      <li>No intrusivo</li>
+                      <li>Comienzo inmediato</li>
+                      <li>Más eficiente & Más seguro</li>
                     </ul>
                   </CardDescription>
                 </CardContent>
@@ -327,7 +327,7 @@ export default function Automatizacion() {
         </div>
         <div className=" text-center max-w-5xl mx-auto pt-4 md:pt-28">
           <h3 className="text-3xl font-semibold max-w-6xl mx-auto text-[#39506D] mb-8">
-            Contactanos y descubrí cómo Ansible puede transformar la gestión de
+            Contáctanos y descubrí cómo Ansible puede transformar la gestión de
             tu infraestructura.
           </h3>
           <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-[250px] ">
