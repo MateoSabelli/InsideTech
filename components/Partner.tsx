@@ -17,7 +17,7 @@ const partners = [
   },
   {
     name: 'Galeno',
-    logo: '/galeno.png',
+    logo: '/Galeno.png',
     width: 100,
     height: 100,
   },

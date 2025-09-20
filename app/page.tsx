@@ -263,7 +263,7 @@ export default function Home() {
       </section>
       {/* <Productos2 /> */}
 
-      <section className="max-w-7xl mx-auto rounded-3xl bg-[#6AA2CC]/70 h-[35vh] flex flex-col items-center justify-center mb-10">
+      <section className="max-w-7xl mx-auto rounded-3xl bg-[#6AA2CC]/70 h-[35vh] flex flex-col items-center justify-center mb-16">
         <h4 className="text-[#39506D] text-3xl font-semibold  py-4">
           ¿Querés formar parte de nuestro equipo?
         </h4>
