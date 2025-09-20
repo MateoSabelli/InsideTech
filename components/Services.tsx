@@ -1,20 +1,13 @@
 'use client';
 import { motion } from 'framer-motion';
-import {
-  GitBranch,
-  CloudCog,
-  Users,
-  SearchCode,
-  Infinity,
-  Waypoints,
-} from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const services = [
   {
     id: 'observabilidad',
     link: '/observabilidad',
-    icon: SearchCode,
+    icon: '/home/Observabilidad.svg',
     title: 'Observabilidad',
     description:
       'Implementamos plataformas de código abierto para la visualización y análisis de datos en tiempo real, facilitando una toma de decisiones más precisa.',
@@ -22,7 +15,7 @@ const services = [
   {
     id: 'itsm',
     link: '/itsm',
-    icon: GitBranch,
+    icon: '/home/Itsm.svg',
     title: 'ITSM',
     description:
       'Gestionamos servicios y activos de manera autónoma para optimizar la eficiencia operativa y aumentar la productividad.',
@@ -30,7 +23,7 @@ const services = [
   {
     id: 'devops',
     link: '/devops',
-    icon: Infinity,
+    icon: '/home/Devops.svg',
     title: 'DEVOPS',
     description:
       'Aceleramos el ciclo de vida del desarrollo de software mediante prácticas de integración y entrega continua, asegurando productos de alta calidad.',
@@ -38,7 +31,7 @@ const services = [
   {
     id: 'automatizacion',
     link: '/automatizacion',
-    icon: Waypoints,
+    icon: '/home/Automatizacion.svg',
     title: 'Automatización',
     description:
       'Optimizamos tus procesos mediante soluciones de automatización que reducen errores y tiempos operativos.',
@@ -46,7 +39,7 @@ const services = [
   {
     id: 'staffing',
     link: '/staffing',
-    icon: Users,
+    icon: '/home/Staffing.svg',
     title: 'Staffing',
     description:
       'Brindamos servicios profesionales y equipos técnicos altamente calificados, adaptados a las necesidades específicas de cada proyecto.',
@@ -54,7 +47,7 @@ const services = [
   {
     id: 'consultoria-cloud',
     link: '/consultoria',
-    icon: CloudCog,
+    icon: '/home/Cloud.svg',
     title: 'CONSULTORÍA CLOUD',
     description:
       'Ofrecemos asesoramiento personalizado para evaluar e implementar las mejores alternativas en tecnologías de la información y servicios en la nube.',
@@ -63,7 +56,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="py-20 relative " id="servicios">
+    <section className="pb-20 pt-10 relative " id="servicios">
       <div className="max-w-7xl mx-auto px-4 sm:px-0 ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -72,8 +65,8 @@ export const Services = () => {
           transition={{ duration: 0.5 }}
           className="text-center "
         >
-          <h2 className="text-3xl text-center max-w-7xl mx-auto font-semibold text-[#39506D] mb-12">
-            Nuestros servicios
+          <h2 className="text-3xl text-center max-w-7xl mx-auto font-semibold text-[#39506D] mb-8">
+            NUESTROS SERVICIOS
           </h2>
         </motion.div>
 
@@ -95,12 +88,18 @@ export const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Link href={service.link} id={service.id}>
-                <div className="group relative border bg-white border-gray-100 hover:border-gray-300 rounded-xl p-8 h-full transition-all duration-300 shadow-sm hover:shadow-md">
+                <div className="group relative border bg-white border-gray-300 hover:border-gray-400 rounded-xl p-4 h-full transition-all duration-300 shadow-lg hover:shadow-md hover:bg-gray-100">
                   <div className="relative  flex flex-col gap-4 justify-center items-center">
-                    <service.icon className="w-16 h-16 text-[#6AA2CC]" />
+                    <Image
+                      src={service.icon}
+                      alt={service.title}
+                      width={150}
+                      height={150}
+                    />
+                    {/* 
                     <h3 className="text-xl font-bold text-[#6AA2CC] mb-3">
                       {service.title}
-                    </h3>
+                    </h3> */}
                   </div>
                   <p className="text-gray-600 mb-6 leading-relaxed text-base text-center">
                     {service.description}

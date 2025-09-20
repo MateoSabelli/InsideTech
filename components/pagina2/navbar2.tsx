@@ -12,10 +12,10 @@ export default function Navbar2() {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   const navItems = [
-    { name: 'Nosotros', href: '/nosotros' },
+    { name: 'Nosotros', href: '/#nosotros' },
     {
       name: 'Servicios',
-      href: '/servicios',
+      href: '/#servicios',
       dropdown: [
         { name: 'Automatización', href: '/automatizacion' },
         { name: 'Observabilidad', href: '/observabilidad' },
@@ -29,7 +29,7 @@ export default function Navbar2() {
     },
     {
       name: 'Productos',
-      href: '/productos',
+      href: '/#productos',
       dropdown: [
         { name: 'InvGate SM', href: '/invgatesm' },
         { name: 'InvGate AM', href: '/invgateam' },

@@ -5,23 +5,33 @@ import Image from 'next/image';
 const partners = [
   {
     name: 'Aconcagua',
-    logo: '/svg/Aconcagua.svg',
+    logo: '/Diagnostico.png',
+    width: 150,
+    height: 100,
   },
   {
     name: 'BBVA',
-    logo: '/svg/BBVA.svg',
+    logo: '/Sanatorio.png',
+    width: 150,
+    height: 100,
   },
   {
     name: 'Galeno',
-    logo: '/svg/galeno.svg',
+    logo: '/galeno.png',
+    width: 100,
+    height: 100,
   },
   {
     name: 'GrupoProvincia',
-    logo: '/svg/GrupoProvincia.svg',
+    logo: '/GrupoProvincia.png',
+    width: 150,
+    height: 100,
   },
   {
     name: 'Arcos Dorados',
-    logo: '/svg/ArcosDorados.svg',
+    logo: '/Arcos.png',
+    width: 150,
+    height: 100,
   },
 ];
 
@@ -30,22 +40,20 @@ const duplicatedPartners = [...partners, ...partners];
 
 export const Clientes = () => {
   return (
-    <section className="container mx-auto overflow-hidden pt-5" id="clientes">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-row gap-4">
-        {/* <div className="text-start mb-16">
-          <h2 className="text-3xl md:text-3xl font-semibold text-secondary dark:text-white mt-2">
-            Empresas que confían en nosotros
-          </h2>
-        </div> */}
-        <div className="relative w-full overflow-hidden">
+    <section className=" bg-gray-200 overflow-hidden " id="clientes">
+      <div className="max-w-7xl mx-auto flex flex-row gap-4 relative items-center justify-center h-[15vh]">
+        <h2 className="text-xl md:text-lg font-semibold text-gray-600 dark:text-white w-[300px]">
+          CONFÍAN EN NOSOTROS
+        </h2>
+        <div className=" w-full overflow-hidden flex items-center justify-center h-full">
           <motion.div
-            className="flex gap-8 items-center"
+            className="flex items-center"
             animate={{
               x: ['0%', '-50%'],
             }}
             transition={{
               x: {
-                duration: 20,
+                duration: 35,
                 repeat: Infinity,
                 ease: 'linear',
                 repeatType: 'reverse',
@@ -55,14 +63,14 @@ export const Clientes = () => {
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
-                className="flex-shrink-0  dark:bg-gray-800/50  rounded-lg p-8 flex items-center justify-center min-h-[120px] min-w-[250px]"
+                className="flex-shrink-0  dark:bg-gray-800/50 rounded-lg  flex items-center justify-center min-w-[250px] h-full"
               >
-                <div className="relative w-full h-[40px] flex items-center justify-center">
+                <div className="relative w-full  flex items-center justify-center">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
-                    width={200}
-                    height={100}
+                    width={partner.width}
+                    height={partner.height}
                     className="object-contain hover:filter-none transition-all duration-300"
                     priority
                   />

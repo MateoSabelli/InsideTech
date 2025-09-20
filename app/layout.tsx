@@ -48,7 +48,7 @@ export default function RootLayout({
             rel="noopener noreferrer"
             className="inline-flex items-center group"
           >
-            <div className="bg-blue-400 hover:bg-blue-500 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 group-hover:scale-105">
+            <div className="bg-green-400 hover:bg-green-500 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 group-hover:scale-105">
               <FaWhatsapp size={30} />
             </div>
           </a>

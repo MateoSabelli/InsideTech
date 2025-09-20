@@ -1,18 +1,17 @@
-// import { About } from '@/components/About';
-import { Contact } from '@/components/Contact';
 import Hero2 from '@/components/pagina2/Hero2';
 import Productos2 from '@/components/pagina2/Productos2';
 import { Services } from '@/components/Services';
-// import { Clientes } from '@/components/Partner';
+import { Clientes } from '@/components/Partner';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import { FaPlus } from 'react-icons/fa';
+// import { FaPlus } from 'react-icons/fa';
 
 export default function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden ">
       <Hero2 />
-      <section className="py-8 px-4 bg-[#F0F3F7]">
+
+      {/* <section className="py-8 px-4 bg-[#F0F3F7]">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto items-center justify-center">
           <div className="flex flex-row items-center justify-center space-x-4">
             <FaPlus className="text-gray-500 text-4xl" />
@@ -36,25 +35,62 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-      {/* <Clientes /> */}
-      {/* Main Content Section */}
-      <section className="py-16 px-4 " id="nosotros">
+      </section> */}
+      <Clientes />
+
+      <Services />
+      <Productos2 />
+      {/* <section className="px-4 bg-[#F0F3F7] h-[12vh]  ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto items-center justify-center h-full">
+          <div className="flex flex-row items-center justify-center space-x-4">
+            <FaPlus className="text-gray-500 text-3xl" />
+            <div className="text-start">
+              <div className="text-2xl font-bold text-[#6AA2CC]">20</div>
+              <div className="text-lg text-gray-500 font-semibold">Años</div>
+            </div>
+          </div>
+          <div className="flex flex-row items-center justify-center space-x-4">
+            <FaPlus className="text-gray-500 text-3xl" />
+            <div className="text-start">
+              <div className="text-2xl font-bold text-[#6AA2CC]">500</div>
+              <div className="text-lg text-gray-500 font-semibold">
+                Proyectos
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row items-center justify-center space-x-4">
+            <FaPlus className="text-gray-500 text-3xl" />
+            <div className="text-start">
+              <div className="text-2xl font-bold text-[#6AA2CC]">100</div>
+              <div className="text-lg text-gray-500 font-semibold">
+                Clientes
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="py-16  px-4 " id="nosotros">
+        {' '}
+        {/* py-16 */}
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Column - Nosotros */}
             <div className="flex flex-col items-center justify-center">
               <div className="flex flex-col items-start justify-start">
                 <h2 className="text-3xl  max-w-7xl mx-auto font-semibold text-[#39506D] mb-8">
                   Nosotros
                 </h2>
-                <p className="text-gray-600 mb-4 text-justify">
+                <p className="text-gray-600 mb-4 text-center">
+                  {' '}
+                  {/* text-justify */}
                   Con más de 20 años de experiencia en el mercado tecnológico,
                   acompañamos a las organizaciones en el logro de sus objetivos
                   de negocio. Diseñamos, desarrollamos e implementamos
                   soluciones tecnológicas, innovadoras y de alta calidad.
                 </p>
-                <p className="text-gray-600 mb-6 text-justify">
+                <p className="text-gray-600 mb-6 text-center">
+                  {' '}
+                  {/* text-justify */}
                   Empresas líderes confían en nosotros, no solo por nuestra
                   capacidad técnica, sino también por el respaldo y el
                   compromiso que ofrecemos como socio estratégico, mediante un
@@ -93,7 +129,7 @@ export default function Home() {
                 <h2 className="text-3xl text-center max-w-7xl mx-auto font-semibold text-[#39506D] mb-8">
                   ¿Por qué elegirnos?
                 </h2>
-                <p className="text-gray-600 mb-8 text-justify">
+                <p className="text-gray-600 mb-8 text-center">
                   En InsideTech combinamos experiencia, conocimiento y
                   compromiso para ofrecer soluciones tecnológicas de alto valor,
                   adaptadas a las necesidades específicas de cada cliente. Estas
@@ -116,7 +152,7 @@ export default function Home() {
                   <div className="relative">
                     {/* número */}
                     <div className="absolute left-1/2 -translate-x-1/2 -top-1">
-                      <div className="w-10 h-10 bg-[#6AA2CC] rounded-full flex items-center justify-center text-white font-bold">
+                      <div className="w-10 h-10 bg-[#6AA2CC] rounded-full flex items-center text-xl justify-center text-white font-bold">
                         1
                       </div>
                     </div>
@@ -125,7 +161,7 @@ export default function Home() {
                       <div></div>
                       <div className="text-left pl-8 space-y-2">
                         <p className="text-[#6AA2CC] font-semibold">
-                          Experiencia comprobada
+                          EXPERIENCIA <br /> COMPROBADA
                         </p>
                         <p className="text-gray-700 text-base max-w-xs ml-auto">
                           Contamos con un{' '}
@@ -142,7 +178,7 @@ export default function Home() {
                   <div className="relative">
                     {/* número */}
                     <div className="absolute left-1/2 -translate-x-1/2 -top-1">
-                      <div className="w-10 h-10 bg-[#6AA2CC] rounded-full flex items-center justify-center text-white font-bold">
+                      <div className="w-10 h-10 bg-[#6AA2CC] rounded-full flex items-center text-xl justify-center text-white font-bold">
                         2
                       </div>
                     </div>
@@ -169,7 +205,7 @@ export default function Home() {
                   <div className="relative">
                     {/* número */}
                     <div className="absolute left-1/2 -translate-x-1/2 -top-1">
-                      <div className="w-10 h-10 bg-[#6AA2CC] rounded-full flex items-center justify-center text-white font-bold">
+                      <div className="w-10 h-10 bg-[#6AA2CC] rounded-full flex items-center text-xl justify-center text-white font-bold">
                         3
                       </div>
                     </div>
@@ -194,7 +230,7 @@ export default function Home() {
                   <div className="relative">
                     {/* número */}
                     <div className="absolute left-1/2 -translate-x-1/2 -top-1">
-                      <div className="w-10 h-10 bg-[#6AA2CC] rounded-full flex items-center justify-center text-white font-bold">
+                      <div className="w-10 h-10 bg-[#6AA2CC] rounded-full flex items-center text-xl justify-center text-white font-bold">
                         4
                       </div>
                     </div>
@@ -225,24 +261,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* <Productos2 /> */}
 
-      {/* Bottom CTA Section */}
-      <section className="py-12 px-4 bg-gray-50">
-        <div className="container mx-auto text-center">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" className="px-8 py-3">
-              Brochure
-            </Button>
-            <Button className="bg-blue-600 hover:bg-blue-700 px-8 py-3">
-              Coordinar una reunión
-            </Button>
-          </div>
-        </div>
+      <section className="max-w-7xl mx-auto rounded-3xl bg-[#6AA2CC]/70 h-[35vh] flex flex-col items-center justify-center mb-10">
+        <h4 className="text-[#39506D] text-3xl font-semibold  py-4">
+          ¿Querés formar parte de nuestro equipo?
+        </h4>
+        <Button className="bg-[#39506D] hover:bg-[#39506D]/90 font-semibold text-lg text-white px-8 py-3 mt-4 rounded-full h-[40px] w-auto ">
+          Envianos tu CV
+        </Button>
       </section>
-      <Services />
-      {/* <About /> */}
-      <Productos2 />
-      <Contact />
     </div>
   );
 }
