@@ -7,7 +7,7 @@ const services = [
   {
     id: 'observabilidad',
     link: '/observabilidad',
-    icon: '/home/Observabilidad.svg',
+    icon: '/home/OBSERVABILIDAD.svg',
     title: 'Observabilidad',
     description:
       'Implementamos plataformas de código abierto para la visualización y análisis de datos en tiempo real, facilitando una toma de decisiones más precisa.',
@@ -15,7 +15,7 @@ const services = [
   {
     id: 'itsm',
     link: '/itsm',
-    icon: '/home/Itsm.svg',
+    icon: '/home/ITSM.svg',
     title: 'ITSM',
     description:
       'Gestionamos servicios y activos de manera autónoma para optimizar la eficiencia operativa y aumentar la productividad.',
@@ -23,7 +23,7 @@ const services = [
   {
     id: 'devops',
     link: '/devops',
-    icon: '/home/Devops.svg',
+    icon: '/home/DEVOPS.svg',
     title: 'DEVOPS',
     description:
       'Aceleramos el ciclo de vida del desarrollo de software mediante prácticas de integración y entrega continua, asegurando productos de alta calidad.',
@@ -31,7 +31,7 @@ const services = [
   {
     id: 'automatizacion',
     link: '/automatizacion',
-    icon: '/home/Automatizacion.svg',
+    icon: '/home/AUTOMATIZACION.svg',
     title: 'Automatización',
     description:
       'Optimizamos tus procesos mediante soluciones de automatización que reducen errores y tiempos operativos.',
@@ -39,7 +39,7 @@ const services = [
   {
     id: 'staffing',
     link: '/staffing',
-    icon: '/home/Staffing.svg',
+    icon: '/home/STAFFING.svg',
     title: 'Staffing',
     description:
       'Brindamos servicios profesionales y equipos técnicos altamente calificados, adaptados a las necesidades específicas de cada proyecto.',
@@ -47,7 +47,7 @@ const services = [
   {
     id: 'consultoria-cloud',
     link: '/consultoria',
-    icon: '/home/Cloud.svg',
+    icon: '/home/CLOUD.svg',
     title: 'CONSULTORÍA CLOUD',
     description:
       'Ofrecemos asesoramiento personalizado para evaluar e implementar las mejores alternativas en tecnologías de la información y servicios en la nube.',
